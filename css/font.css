@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Quicksand Light'), local('Quicksand-Light'), url("type/Quicksand-Light.woff") format('woff');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand'), local('Quicksand-Regular'), url("type/Quicksand-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'Neris';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Neris SemiBold'), local('Neris-SemiBold'), url("type/Neris-SemiBold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Quicksand Light Italic'), local('Quicksand-Light-Italic'), url("type/Quicksand-LightItalic.woff") format('woff');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Quicksand Italic'), local('Quicksand-Italic'), url("type/Quicksand-Italic.woff") format('woff');
+}
+@font-face {
+  font-family: 'Neris';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Neris SemiBold Italic'), local('Neris-SemiBold-Italic'), url("type/Neris-SemiBoldItalic.woff") format('woff');
+}
