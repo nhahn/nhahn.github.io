@@ -10,6 +10,10 @@
   border-left: 1px solid white;
 }
 
+h1 {
+  font-weight: 700;
+}
+
 .footer .columns h5{
   text-align: center;
 }
@@ -22,21 +26,25 @@
   padding-top: 9px;
 }
 
-.wrapper .top-bar-section h3 {
+.wrapper .top-bar-section h4 {
   color: white;;
-  padding-top: 9px;
+  padding-top: 12px;
   margin-bottom: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 
 .wrapper .top-bar-section a {
  color: white;
 }
-/*
-body { 
-  background: url('/assets/img/triangular.png');
+
+div.wrapper { 
+  background: url('/assets/img/gplaypattern.png'); 
   background: repeat;
-} */
+} 
+
+#content {
+  background: white;
+}
 
 * {
   margin: 0;

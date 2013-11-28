@@ -1,9 +1,25 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<h1>{{ page.title }}</h1>
+<div class="row">
+  <div class="large-12 columns">
+    <h4>{{ page.summary }}</h4>
+  </div>
 </div>
+<div class="row">
+  <div class="large-12 columns">
+    <a class="th">
+      <img src="{{ page.image}}"/>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns">
+  </div>
+  <div class="large-8 columns">
+    <p class="meta">{{ page.date | date_to_string }}</p>
+    {{ content }}
+  </div>
+</div>
+
