@@ -1,0 +1,56 @@
+@import url('foundation-icons.css');
+
+.footer {
+  background: #333333;
+  padding-top: 15px;
+}
+
+.footer .columns {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.footer .columns h5{
+  text-align: center;
+}
+
+.wrapper .top-bar {
+  height: 4em;
+}
+
+.wrapper .title-area {
+  padding-top: 9px;
+}
+
+.wrapper .top-bar-section h3 {
+  color: white;;
+  padding-top: 9px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.wrapper .top-bar-section a {
+ color: white;
+}
+/*
+body { 
+  background: url('/assets/img/triangular.png');
+  background: repeat;
+} */
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+.footer, .push {
+  height: 4em;
+}
+

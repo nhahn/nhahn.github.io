@@ -7,18 +7,28 @@
     <title>{{ page.title }}</title>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/foundation.css" />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/syntax.css">
-    
-    <script src="/js/modernizr.js"></script>
+    <link rel="stylesheet" href="/assets/css/foundation.css" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="stylesheet" href="/assets/css/custom.css" /> 
+    <script src="/assets/js/modernizr.js"></script>
   </head>
   <body>
+    <div class="wrapper">
       <nav class="top-bar" data-topbar>
         <ul class="title-area">
           <li class="name">
-            <h1><a href="#">
+            <a href="#"><img src="/assets/img/name.svg" alt="Nathan Hahn" style="height:100%; padding-left: 10px;"/></a>
           </li>
+        </ul>
+        <section class="top-bar-section">
+             <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="#"><h3>Portfolio</h3></a></li>
+            <li><a href="#"><h3>Resume</h3></a></li>
+            <li><a href="#"><h3>About Me</h3></a></li>
+          </ul>
+        </section> 
       </nav>
 
       <div class="row">
@@ -26,29 +36,32 @@
           {{ content }}
         </div>
       </div>
+      <div class="push"></div>
+    </div>
 
-      <div class="footer">
-        <div class="contact">
-          <p>
-            Your Name<br />
-            What You Are<br />
-            you@example.com
-          </p>
+    <div class="footer">
+      <div class="row property">
+        <div class="medium-2 columns">
+          <h5><a href="mailto:nphahn@gmail.com?subject=Portfolio"><i class="fi-mail"></i> Email</a></h5>
         </div>
-        <div class="contact">
-          <p>
-            <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-            <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-          </p>
+        <div class="medium-2 columns">
+          <h5><a href="http://lnkd.in/dYSpr9N"><i class="fi-social-linkedin"></i> LinkdIn</a></h5>
+        </div>
+        <div class="medium-2 columns">
+          <h5><a href="https://github.com/nhahn"><i class="fi-social-github"></i> Github</a></h5>
+        </div>
+        <div class="medium-3 large-offset-3 columns">
+          <h5><a href="http://nathanhahn.wordpress.com">Design Blog</a></h5>
         </div>
       </div>
     </div>
+  </div>
     
-    <script src="/js/jquery.js"></script>
-    <script src="/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 
   </body>
 </html>
