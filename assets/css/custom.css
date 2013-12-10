@@ -1,5 +1,27 @@
 @import url('foundation-icons.css');
 
+#home {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#home .row {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333333;
+    
+}
+
+#home .row .summary {
+    font-size: larger;
+}
+
+#home .row h2 {
+ padding-left:15px;  
+ padding-bottom: 8px;
+}
+
 .footer {
   background: #333333;
   padding-top: 15px;
