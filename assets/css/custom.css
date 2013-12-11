@@ -1,5 +1,10 @@
 @import url('foundation-icons.css');
 
+div.fixed{
+    left: auto !important;
+    margin-left: -10px;
+}
+
 #home {
     padding-top: 30px;
     padding-left: 10px;
