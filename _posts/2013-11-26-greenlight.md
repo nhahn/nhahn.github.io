@@ -18,20 +18,61 @@ code: http://greenlightbeta.com
     </dl>
 </div>
 
-
+ 
 <a name="intro"></a>
 <h3 data-magellan-destination="intro">Introduction</h3>
 
+The use of natural light in commercial settings is undervalued. Most large industrial parks and university campuses rely solely on artificial sources to provide light for their rooms. Artificial light at these locations is often emitted in excess of what is necessary in an indoor space. This excess represents an entirely preventable waste of energy. Windows in these rooms offer an abundance of natural light during the day and this can help brighten a room. However, the artificial lights are usually on at full power whether the sun is shining bright or hiding behind the clouds. 
 
+<ul class="small-block-grid-3">
+    <li><img class="th" src="/assets/img/greenlight/intro_1.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/intro_2.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/intro_3.png"></li>
+</ul>
+
+<div class="row">
+    <div class="medium-8 columns">
+        <img class="th" src="/assets/img/greenlight/greenlight_intro.jpg">
+    </div>
+    <div class="medium-4 columns">
+    <p>Our group has set out to solve this problem by developing an information system that automates artificial light sources to enhance comfort and reduce energy consumption. This system will dim the artificial lights when the sunlight entering the room is brighter. As the sunlight in the room decreases, the artificial lights in the room will brighten, compensating for this loss of natural light. This system can save energy due to the decrease in artificial light when sunlight is present. </p>
+    </div>
+</div>
 
 <a name="hardware"></a>
 <h3 data-magellan-destination="hardware">Hardware</h3>
 
+#####Light Sensor
+The light sensor records the amount of sunlight that is entering the room from outside. This sensor is responsible for sending this reading to the server so that a calculation can be made to determine how much the lights in the room need to be dimmed or brightened.
+
+#####Dimmer
+The dimmer is responsible for controlling the amount of electricity that is sent to the lights in the room. It is placed in the wall, bridging the gap between the light switch and the lights in the room. Depending on the amount of sunlight entering the room, this dimmer increases or decreases the amount of electricity that flows to the lights.
+
+
+#####Electric Imp
+The Electric Imp is a Wi-Fi chip that is connected to both the light sensor and the dimmer. The Imp connected to the light sensor is responsible for transferring the natural light reading to the server over the Wi-Fi network. The Imp connected to the dimmer is responsible for receiving the reading from the server that tells the dimmer how much it should alter the electricity transfer to the lights. In addition, this Imp responds to the server with the amount of energy transferred to the lights through the dimmer so that this reading can be depicted in the web interface.
+
+<ul class="small-block-grid-3">
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v1_2.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_layout.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_picture.png"></li>
+</ul>
+
 <a name="dashboard"></a>
 <h3 data-magellan-destination="dashboard">Dashboard</h3>
 
+<ul class="small-block-grid-2">
+    <li><img class="th" src="/assets/img/greenlight/dash_v1.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/dash_v2.png"></li>
+</ul>
+
 <a name="back"></a>
 <h3 data-magellan-destination="back">Backend</h3>
+
+<ul class="small-block-grid-2">
+    <li><img class="th" src="/assets/img/greenlight/ERD_v1.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/server_setup.png"></li>
+</ul>
 
 <a name="discuss"></a>
 <h3 data-magellan-destination="discuss">Future Plans/Work</h3>
