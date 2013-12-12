@@ -14,7 +14,7 @@ code: http://greenlightbeta.com
         <dd data-magellan-arrival="hardware"><a href="#hardware">Hardware</a></dd>
         <dd data-magellan-arrival="dashboard"><a href="#dashboard">Dashboard</a></dd>
         <dd data-magellan-arrival="back"><a href="#back">Backend</a></dd>
-        <dd data-magellan-arrival="discuss"><a href="#discuss">Future Plans/Work</a></dd>
+        <dd data-magellan-arrival="discuss"><a href="#discuss">Value Calculations</a></dd>
     </dl>
 </div>
 
@@ -69,13 +69,22 @@ The Electric Imp is a Wi-Fi chip that is connected to both the light sensor and 
 <a name="back"></a>
 <h3 data-magellan-destination="back">Backend</h3>
 
-<ul class="small-block-grid-2">
-    <li><img class="th" src="/assets/img/greenlight/ERD_v1.png"></li>
-    <li><img class="th" src="/assets/img/greenlight/server_setup.png"></li>
-</ul>
+<img class="th" src="/assets/img/greenlight/sensor_reading_workflow.jpg">
+
+The above workflow is how the Greenlight system works from the sensor, bot the backend server, and back out to the dimmer. 
+
+<div class="row">
+    <div class="medium-4 columns"> <p>
+The image to the right details how our backend server is configured and deployed. We utilize a hot-deploy setup with Passenger and NGINX so we can easily push out new updates. Additionally, we use capistrano to deploy it all, so any of our team members can push out new versions to the server whenever we have a new release. 
+    </p>
+    </div>
+    <div class="medium-8 columns">
+        <img class="th" src="/assets/img/greenlight/server_setup.png">
+    </div>
+</div>
 
 <a name="discuss"></a>
-<h3 data-magellan-destination="discuss">Future Plans/Work</h3>
+<h3 data-magellan-destination="discuss">Value Calculations</h3>
 
 <table >
  <tr >
