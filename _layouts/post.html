@@ -26,6 +26,16 @@ layout: default
     {% endif %}
 </div>
 <div class="row">
+    <div class="large-12 columns">
+        {% for collab_hash in page.collaborators %}
+            {% for collab in collab_hash %}
+                {{ collab[1] | remove: ' ' | strip_newlines | downcase | md5 }}
+                {{ collab[0] }} 
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+<div class="row">
   <div class="large-12 columns">
     {{ content }}
   </div>

@@ -2,10 +2,14 @@
 layout: post
 title:  Greenlight
 date:   2013-11-26 21:46:56
-summary: Greenlight is a system devised for my Information Systems capstone project. It harnesses this idea of daylight harvesting -- adjusting artificial lighting in accordance with natural lighting -- wirelessly. By connecting together 3 components - a dimmer, a sensor, and a backend server - we created a system that had potential for saving up to 70% of lighting costs. 
+summary: Greenlight is a system created for my Information Systems capstone project. It harnesses this idea of daylight harvesting -- adjusting artificial lighting in accordance with natural lighting -- wirelessly. By connecting together 3 components - a dimmer, a sensor, and a backend server - we created a system that has a potential for saving up to 70% of lighting costs. 
 image: /assets/img/greenlight.png
 categories: portfolio
 code: http://greenlightbeta.com
+collaborators: 
+    - Mike Ferraco: ferraco.mike@gmail.com
+    - Dillon Grove: dillongrove@gmail.com
+    - Nathan Hahn: nphahn@gmail.com
 ---
 
 <div data-magellan-expedition="fixed">
