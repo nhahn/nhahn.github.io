@@ -57,8 +57,8 @@ The dimmer is responsible for controlling the amount of electricity that is sent
 The Electric Imp is a Wi-Fi chip that is connected to both the light sensor and the dimmer. The Imp connected to the light sensor is responsible for transferring the natural light reading to the server over the Wi-Fi network. The Imp connected to the dimmer is responsible for receiving the reading from the server that tells the dimmer how much it should alter the electricity transfer to the lights. In addition, this Imp responds to the server with the amount of energy transferred to the lights through the dimmer so that this reading can be depicted in the web interface.
 
 <ul class="small-block-grid-3">
-    <li><img class="th" src="/assets/img/greenlight/dimmer_v1_2.png"></li>
-    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_layout.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v1_2.jpg"></li>
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_layout.jpg"></li>
     <li><img class="th" src="/assets/img/greenlight/dimmer_v2_picture.png"></li>
 </ul>
 
