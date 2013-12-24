@@ -9,7 +9,7 @@ code: http://greenlightbeta.com
 collaborators: 
     - Mike Ferraco: ferraco.mike@gmail.com
     - Dillon Grove: dillongrove@gmail.com
-    - Nathan Hahn: nphahn@gmail.com
+    - Jonathan Miller: jmill1030@gmail.com
 ---
 
 <div data-magellan-expedition="fixed">
@@ -58,8 +58,8 @@ The Electric Imp is a Wi-Fi chip that is connected to both the light sensor and 
 
 <ul class="small-block-grid-3">
     <li><img class="th" src="/assets/img/greenlight/dimmer_v1_2.jpg"></li>
-    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_layout.jpg"></li>
-    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_picture.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_layout.png"></li>
+    <li><img class="th" src="/assets/img/greenlight/dimmer_v2_picture.jpg"></li>
 </ul>
 
 <a name="dashboard"></a>

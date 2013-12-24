@@ -8,6 +8,20 @@ layout: default
   </div>
 </div>
 <div class="row">
+    <div class="large-12 columns" id="collaborators">
+        <h4>Collaborators</h4>
+        <ul class="small-block-grid-{{ page.collaborators | size }}">
+            {% for collab_hash in page.collaborators %}
+                {% for collab in collab_hash %}
+                    <li><a href="mailto:{{ collab[1] | remove: ' ' | strip_newlines | downcase }}">
+                        {{ collab[0] }} 
+                    </a></li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="row">
   {% if page.code %}
       <div class="large-2 columns">
         <a class="button" href="{{ page.code }}">Get Code</a>  
@@ -25,16 +39,12 @@ layout: default
       </div>
     {% endif %}
 </div>
-<div class="row">
-    <div class="large-12 columns">
-        {% for collab_hash in page.collaborators %}
-            {% for collab in collab_hash %}
-                {{ collab[1] | remove: ' ' | strip_newlines | downcase | md5 }}
-                {{ collab[0] }} 
-            {% endfor %}
-        {% endfor %}
-    </div>
-</div>
+<script type="application/javascript">
+    $('#collaborators a').each(function(index,elem) {
+        var email = elem.getAttribute("href").substring(7);
+        $(elem).prepend($('<img>').attr({src: 'http://www.gravatar.com/avatar/' + md5(email)}));
+    });
+</script>
 <div class="row">
   <div class="large-12 columns">
     {{ content }}

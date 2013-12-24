@@ -6,6 +6,9 @@ summary: This was an application created for maintenance workers for my Designin
 image: /assets/img/maintenaid.png
 categories: portfolio
 code: https://github.com/nhahn/maintenaid
+collaborators:
+    - Jillian Goodwin: jpgoodwyn@gmail.com
+    - Sean Tai: stai@andrew.cmu.edu
 ---
 
 <div data-magellan-expedition="fixed">

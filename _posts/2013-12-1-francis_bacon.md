@@ -6,6 +6,9 @@ summary: As a part of my Six Degrees of Francis Bacon class, my group wanted to 
 image: /assets/img/bacon.png
 categories: portfolio
 code: https://github.com/nhahn/NgramProcessing
+collaborators:
+    - Cole Heiner: cheiner@andrew.cmu.edu
+    - Colleen Eagan: colleagan@gmail.com
 ---
 
 <div data-magellan-expedition="fixed">
