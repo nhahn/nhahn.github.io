@@ -10,11 +10,14 @@ layout: default
 <div class="row">
     <div class="large-12 columns" id="collaborators">
         <h4>Collaborators</h4>
-        <ul class="small-block-grid-{{ page.collaborators | size }}">
+        <ul class="small-block-grid-5">
             {% for collab_hash in page.collaborators %}
                 {% for collab in collab_hash %}
                     <li><a href="mailto:{{ collab[1] | remove: ' ' | strip_newlines | downcase }}">
-                        {{ collab[0] }} 
+                        
+                        <div>
+                            {{ collab[0] | strip_newlines }} 
+                        </div>
                     </a></li>
                 {% endfor %}
             {% endfor %}
@@ -42,7 +45,7 @@ layout: default
 <script type="application/javascript">
     $('#collaborators a').each(function(index,elem) {
         var email = elem.getAttribute("href").substring(7);
-        $(elem).prepend($('<img>').attr({src: 'http://www.gravatar.com/avatar/' + md5(email)}));
+        $(elem).prepend($('<div>').append($('<img>').attr({src: 'http://www.gravatar.com/avatar/' + md5(email)})));
     });
 </script>
 <div class="row">
