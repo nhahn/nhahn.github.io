@@ -2,7 +2,7 @@
 layout: post
 title:  EcoTouch
 date:   2014-5-12 16:29:56
-summary: EcoTouch was developed for the Stony Brooke Watershed Association as part of my undergraduate HCI Capstone project. EcoTouch is a game that helps individuals understand the impact of using sustainable systems in their home. It uses a multitouch table with augmented reality markers to create a physical and digital experience, where users complete simulations of attempting to make a more sustainable home. 
+summary: EcoTouch was developed for the Stony Brook Watershed Association as part of my undergraduate HCI Capstone project. EcoTouch is a game that helps individuals understand the impact of using sustainable systems in their home. It uses a multitouch table with augmented reality markers to create a physical and digital experience, where users complete simulations of attempting to make a more sustainable home. 
 image: /assets/img/eco_touch.png
 categories: portfolio
 code: https://github.com/ChiTheHotDogGuy11/WatershedExhibit
