@@ -69,6 +69,10 @@ div.wrapper {
   background: repeat;
 } 
 
+.controls a.button{
+  width: 100%;
+}
+
 #content {
   background: white;
 }
@@ -97,7 +101,6 @@ html, body {
       height: 4em;
     }
 }
-
 
 #collaborators {
     padding-bottom: 20px;   

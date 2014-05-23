@@ -27,9 +27,14 @@ layout: default
     </div>
 {% endif %}
 <div class="row">
-  {% if page.code %}
-      <div class="large-2 columns">
-        <a class="button" href="{{ page.code }}">Get Code</a>  
+  {% if page.code || page.document %}
+      <div class="large-2 columns controls">
+        {% if page.code %}
+          <a class="button" target="_blank" href="{{ page.code }}">Get Code</a> 
+        {% endif %}
+        {% if page.document %}
+          <a class="button" target="_blank" href="{{ page.document }}">View Document</a> 
+        {% endif %}  
       </div>
       <div class="large-10 columns">
         <a class="th">

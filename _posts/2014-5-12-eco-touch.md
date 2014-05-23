@@ -6,6 +6,7 @@ summary: EcoTouch was developed for the Stony Brook Watershed Association as par
 image: /assets/img/eco_touch.png
 categories: portfolio
 code: https://github.com/ChiTheHotDogGuy11/WatershedExhibit
+document: /assets/documents/environment_report.pdf
 collaborators:
     - Cole Heiner: cheiner@andrew.cmu.edu
     - Shan Huang: yemount@gmail.com
@@ -68,13 +69,37 @@ Some concepts from ideation.
 <a name="product"></a>
 <h3 data-magellan-destination="product">Product</h3>
 
-The concept for the game is to have players build their own environmentally sustainable building while learning about the various features that go into it. Players can choose from a number of different features, such as solar panels, geothermal heating and cooling, and rain barrels, which can be incorporated into their building. The game also allows for players to change the size of their building and the environmental region it is located in. All of these variables impact the overall energy consumption and savings of a player’s building, so players are challenged to make informed decisions about the features they add. Furthermore, players are restricted by a budget that reflects real world costs, giving players incentive to weigh the up-front costs against long term benefits. At the end of the game, players are presented with a graph of their building’s projected energy consumption.
 
-The game itself is both digital and physical. We use a touch screen as the game tabletop, which displays the interfaces, screens, animations, and content that players encounter. The player’s building is represented digitally and occupies the center of the screen. The game’s physical components are the environmental features, which are unique 3D printed pieces. We track the position of these 3D pieces using a camera positioned above the gameboard. A key mechanic of the game is that when a player moves a 3D piece onto the touch screen, that feature is added to the player’s building. To remove a feature, players simply take the corresponding 3D piece off of the touch screen. While a piece is on the screen, players can see important information about that feature, and click on surrounding icons to learn more.
+<div class="row">
+    <div class="medium-6 columns">
+        <p>The concept for the game is to have players build their own environmentally sustainable building while learning about the various features that go into it. Players can choose from a number of different features, such as solar panels, geothermal heating and cooling, and rain barrels, which can be incorporated into their building. The game also allows for players to change the size of their building and the environmental region it is located in. All of these variables impact the overall energy consumption and savings of a player’s building, so players are challenged to make informed decisions about the features they add. Furthermore, players are restricted by a budget that reflects real world costs, giving players incentive to weigh the up-front costs against long term benefits. At the end of the game, players are presented with a graph of their building’s projected energy consumption.</p>
+    </div>
+    <div class="medium-6 columns">
+        <img class="th" src="/assets/img/ecotouch/info_screen.png"/>
+        <p>System Information</p>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-6 columns">
+        <img class="th" src="/assets/img/ecotouch/preference_screen.png"/>
+        <p>User Preferences</p>
+    </div>
+    <div class="medium-6 columns">
+        <p>The game itself is both digital and physical. We use a touch screen as the game tabletop, which displays the interfaces, screens, animations, and content that players encounter. The player’s building is represented digitally and occupies the center of the screen. The game’s physical components are the environmental features, which are unique 3D printed pieces. We track the position of these 3D pieces using a camera positioned above the gameboard. A key mechanic of the game is that when a player moves a 3D piece onto the touch screen, that feature is added to the player’s building. To remove a feature, players simply take the corresponding 3D piece off of the touch screen. While a piece is on the screen, players can see important information about that feature, and click on surrounding icons to learn more.</p>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="medium-6 columns">
+        <p>Customization is a component we would like to emphasize in our game, and we want to give players control over how their building ultimately turns out. We believe that this will add to the open-endedness of the game, making it more fun to play and replay, while also enhancing learning. Since our game is ultimately an educational one, our primary educational objective is to provide players with a general knowledge of environmentally sustainable practices. Our hope is that the knowledge and insights acquired within the game can transfer to real world situations for users.</p>
+        <p>In the following section, we revisit each iteration of the prototype and explain the process as we improve on and test with each version, from start to finish.</p>
+    </div>
+    <div class="medium-6 columns">
+        <img class="th" src="/assets/img/ecotouch/round_screen.png"/>
+        <p>Round Ending Screen</p>
+    </div>
+</div>
 
-Customization is a component we would like to emphasize in our game, and we want to give players control over how their building ultimately turns out. We believe that this will add to the open-endedness of the game, making it more fun to play and replay, while also enhancing learning. Since our game is ultimately an educational one, our primary educational objective is to provide players with a general knowledge of environmentally sustainable practices. Our hope is that the knowledge and insights acquired within the game can transfer to real world situations for users.
-
-In the following section, we revisit each iteration of the prototype and explain the process as we improve on and test with each version, from start to finish.
 
 <a name="presentation"></a>
 <h3 data-magellan-destination="presentation">Presentation</h3>
