@@ -30,7 +30,7 @@ layout: default
   {% if page.code || page.document %}
       <div class="large-2 columns controls">
         {% if page.code %}
-          <a class="button" target="_blank" href="{{ page.code }}">Get Code</a> 
+          <a class="button" target="_blank" href="{{ page.code }}">Get the Code</a>
         {% endif %}
         {% if page.document %}
           <a class="button" target="_blank" href="{{ page.document }}">View Document</a> 
@@ -52,7 +52,7 @@ layout: default
 <script type="application/javascript">
     $('#collaborators a').each(function(index,elem) {
         var email = elem.getAttribute("href").substring(7);
-        $(elem).prepend($('<div>').append($('<img>').attr({src: 'http://www.gravatar.com/avatar/' + md5(email)})));
+        $(elem).prepend($('<div>').append($('<img>').attr({src: 'http://www.gravatar.com/avatar/' + md5(email) + '?d=identicon'})));
     });
 </script>
 <div class="row">
