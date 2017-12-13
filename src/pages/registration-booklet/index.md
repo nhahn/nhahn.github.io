@@ -1,0 +1,139 @@
+---
+layout: post
+title:  Registration Booklet
+date:   2014-4-20 16:29:56
+summary: For my Writing for the Professions class, my group and I created an instructional booklet that detailed the steps required to register for classes. The booklet covers creating your schedule, registration, and waitlist management. 
+image: /assets/img/registration_book.png
+categories: portfolio
+collaborators:
+    - Amira Abu-Saba: amira.abusaba@gmail.com
+    - Niteesh Sundaram: nsundara@andrew.cmu.edu
+---
+
+
+<div data-magellan-expedition="fixed">
+    <dl class="sub-nav">
+        <dd data-magellan-arrival="booklet"><a href="#booklet">Booklet</a></dd>
+        <dd data-magellan-arrival="rhet"><a href="#rhet">Rhetorical Situation</a></dd>
+        <dd data-magellan-arrival="strat"><a href="#strat">Strategies</a></dd>
+        <dd data-magellan-arrival="design"><a href="#design">Design Coices</a></dd>
+
+    </dl>
+</div>
+<a name="booklet"></a>
+<h3 data-magellan-destination="booklet">Booklet</h3>
+
+<script type="text/javascript" src="/assets/ebook/js/swfobject.js"></script>
+<script type="text/javascript" src="/assets/ebook/js/swfaddress.js"></script>
+<script type="text/javascript" src="/assets/ebook/js/swfmacmousewheel.js"></script>
+
+<div style="width: 100%; height: 400px;">
+    <div id="ebookcontainer">
+        <!-- Your ebook will be displayed here. In case user hasn't got actual version of Adobe Flash Player, the below description
+        will appear.
+        -->
+        Hello, you either have JavaScript turned off or an old version of Adobe’s Flash Player.
+        <a href="http://www.macromedia.com/go/getflash/">Get Flash/</a> 
+    </div> 
+</div>
+
+<script language="JavaScript" type="text/javascript">			
+
+    var flashvars = {};
+    /* Adjust setting below to your personal needs (Don't forget to remove '//' from the beginning of the line)  */
+
+    flashvars.locales = "en_EN";
+    //flashvars.bookPath = "/assets/ebook/content/publication";     //path to folder with publication files
+    //flashvars.skinPath = "/assets/ebook/content/skin/skin_1.swf"; //path to viewer skin (swf)
+    //flashvars.useSounds = "true";                         //use sounds ("true=yes, "false"=no)
+    //flashvars.soundsPath = "/assets/ebook/content/snd/";          //path to folder with sound
+    //flashvars.configPath = "/assets/ebook/config/";               //path to folder with eBook configuration (xml)
+    //flashvars.logoPath = "/assets/ebook/content/logo.png";        //path to logo (png or jpg)
+    //flashvars.logoURL = "www.yourpage.pl";                //URL logo link		
+    //flashvars.logoURLWindow = "_blank";                   //open URL in new window ("_blank") or in the same window ("_self")
+    //flashvars.print = "true";
+    //flashvars.save = "true";
+    //flashvars.dragSpeed = "5";				            //speed of page flip (1-7)
+    //flashvars.print = "true";
+    //flashvars.save = "true";
+    //flashvars.buttons = "save, print, zoom";
+
+
+    /* eBook dimension in percentages or in pixels  (var w = "100%", var w = "800" ) */
+    var w = "100%";	//width
+    var h = "100%";	//height
+
+    var params = {};
+    params.allowfullscreen = "true";
+    params.allowscriptaccess = "always";
+    params.allownetworking = "all";
+    //params.wmode = "transparent"; //uncomment for transparent eBook background
+    swfobject.embedSWF( "/assets/ebook/ebook.swf", "ebookcontainer", w, h, "10.0.0", "/assets/ebook/js/expressInstall.swf", flashvars, params );
+</script>
+
+<a name="rhet"></a>
+<h3 data-magellan-destination="rhet">Rhetorical Situation</h3>
+
+In order to write and design a successful document, we had to take into consideration three major factors, with the first being the purpose, the second being the audience, and the third being the context. These three factors shaped the way in which the document was written and designed. 
+
+####Purpose
+
+The purpose of the document is to provide Carnegie Mellon University students a detailed step-by-step guide to completing the overall Registration process on SIO. Through this guide, students will be able to successfully perform a variety of tasks, the broader of which are to browse through prospective courses, plan a course schedule, register for classes, and manage a wait list. The document also includes advanced tips that are not very well known, but which can make the process much easier to complete. To effectively fulfill the purpose, our document was written in such a way as to provide users with the appropriate amount of detail regarding the different steps in the process. It was also important for us to mention all the various sections and steps in the entire process, regardless of how minor they may seem, in order to ensure a wide and well covered scope. At the same time, our written content was supported by strong visuals that further helped students to understand and complete the different steps in the process. 
+
+####Audience
+
+The main audience of our document will be the new students of the CMU community, namely the Freshman, Graduate, or transfer students, who wish to learn how to complete the Registration process through SIO. These students, who are new to the university, will have no prior experience with the process, and will thus require the use of an efficient instruction manual or guide. On the other hand, our minor audience will be current Carnegie Mellon University students who have made a schedule on SIO before, but who need a refresher, or who wish to learn more about the advanced features. However, some of these students may not necessarily have much prior knowledge and experience with the process, especially the upperclassmen, as the process underwent a recent change. The minor audience will include rising Sophomores, Juniors, Seniors and Graduate students. 
+
+Due to the lack of prior knowledge and experience our main audience has with the process, our document was written in great detail, in order to ensure the users gain a full and thorough understanding of the document. Not only this, however, but the level of detail will act as a strong support to the completion of the process, and will remove the possibility of struggle from the process. This was strengthened through the incorporation of relevant visuals to the document. For the more difficult steps in the process, users will be able to refer to the visuals in order to gain a better understanding. Our document design choices also took into consideration the level of experience of both audiences. Our visuals were always positioned on either the left hand side of the page or below the text, and thus helped to develop a schema that the users could easily follow. Moreover, the close proximity between the visuals and the relevant steps helped to further facilitate the users understanding of the document. 
+
+The way in which we separated the document, into not only three major sections, but also several sub-sections within each one of the three, was suitable for both the main and minor target audiences. For the new CMU students (the main audience), the incorporation of major and sub sections will help them to better navigate through the document as they are completing the registration process. They could also easily return to relevant section within the document through the on-going registration process. For the current CMU students (the minor audience), the incorporation of these sections along with a detailed contents page will allow them to easily turn to the specific area that they need a refresher of. For example, a current student who is referring to the manual for the sole purpose of learning about the advanced features will be able to determine the relevant page number and turn to the relevant page through the use of the contents page. This will eliminate the need for the student to go through the document page by page until the relevant section is found. 
+
+####Context	
+
+Our audience will use the document towards the end of the current semester, or before the start of the prospective semester, in order to complete the registration process as a whole. This document is intended to be used constantly and over an extended period, rather than at once or in one sitting. This is due to the nature of the registration process, which is one that is on-going. As a result, it is intended that the first section of the process, the Course Schedule Plan Instructions, to be used a reasonable amount of time prior to the date of registration. Once the course schedule planning is complete, the document will not be referred to until the day of registration. At that point in time, the second section, Registration Process Instructions, will be referred to. Once the registration process is complete, students may either immediately use the third section, Waitlist Process Instructions, if they have a need to, or will refer to it only when the time comes for them to confirm their waitlist courses. On the other hand, students who have not been waitlisted for any of their planned courses will not need to refer to the third section of the document at all. 
+
+Given the context, we have written and designed the document in such a way as to explicitly divide the three relevant stages of the registration process into three separate process instruction sections. This will allow the users to easily refer to the appropriate section for each appropriate stage, and to easily navigate through the document as a whole. 
+
+<a name="strat"></a>
+<h3 data-magellan-destination="strat">Strategies</h3>
+
+####Genre-based Choices
+
+Procedural writing should follow a set of conventions and techniques that, when combined, will create an effective document that will be well understood by the end-users. For our document, we used the conventions and techniques mentioned within Graves and Graves ‘Writing how-to documents’ to create an effective and efficient instructional document. 
+
+It is extremely important to know and understand your target audience in order to effectively create a document that is tailored to their needs and level of experience, as can be understood through Graves and Graves. As mentioned earlier, the level of detail in our document, as well as the content and design choices, were all made in regards to the level of experience and knowledge of our audiences. 
+At the beginning of the document, we included an introduction that provided the users with an initial understanding of what to expect from the document. At the same time, the contents page allowed us to present not only the subdivision of the processes, but also acted as an overview of the content and of the included material. As a result, our users will be able to make a decision as to whether or not the document will satisfy their needs, as well as an understanding of what is to be covered. For our minor target audience, the introduction and the overview will help them to determine if the stage they are looking to refresh or learn about is present, and on which page it could be located. The subdivision of processes also helps both the main and minor audiences to easily navigate through, and come back to, the document at any point in time. At the same time, we were able to incorporate Markel’s ‘Designing Documents’ conventions. For the overview and the contents page, we included accessing tools that facilitate the navigation through the document. The use of numbers and colors allowed us to benefited both us and the audience, as we were able to better organize the document in such a way as to make it easier for the users to navigate.
+
+We made sure to follow the convention of writing usable steps, wherein we wrote the steps in chronological order for both the major sections and the sub-sections and in the imperative. We also made sure to limit one action per step, so as to make the process smoother and easier for the user to follow. Both of these suggestions can be found within ‘Writing how-to documents’. At the same time, we followed Markel’s conventions, most prominently chunking and accessing tools. Through the use of chunking, we were able to group and organize relevant tasks within the various sections, a factor that also allowed us to more easily subdivide. Through this, we were also able to incorporate accessing tools, such as the use of headers and footers, that made the document more informative and descriptive.	
+
+Through the use of screenshots, we were able to easily illustrate the various steps in more detail, as was recommended by Graves and Graves. They acted as a support to the written text and helped the audience to gain a better understanding and grasp of the material. Following Markel’s conventions, these visuals were placed in close proximity to the text, and were aligned to the left hand side or to the bottom of the page.
+
+Lastly, we conducted a usability test that allowed us to gain an understanding of how effective the document is, and the factors that need to be changed in order for it to be more effective for the target user group. Based on our observations and the observations of the user subjects, we were able to make the necessary changes to the document. 
+
+####Audience-Based Content
+
+Our audience is primarily based on students who wish to either learn how to use the SIO Course Schedule Planner or wish to refresh themselves on some of the features they might have forgotten. Since we do not know more about our audience then this general fact, it is important that we make a manual that appeals to all types of learners in the audience. 
+
+We decided to write very clear, and sometimes even incredibly obvious instructions, so that even a person who has horrible intuition when it comes to using SIO could follow our instructions and learn how to design a schedule. In our manual we tell our audience members the exact name of each button they must click, the approximate location of each button, and even include a picture of said button. We feel that this is the only way to ensure that our instructions do not appear vague to any audience member. The general instructions that come with SIO for how to design a schedule do not go into much detail, and thus can be quite unhelpful if a particular student needs very concrete instructions. We wanted our guide to stick out from previous Course Schedule Planner instructions, especially the ones located to the side of a sample schedule that are provided by SIO, and writing incredibly detailed instructions seemed to be the best way to do so.
+
+We also wished our manual to include lots of visual instructions. In fact if a student simply follows the instructions outlined in our visuals, they could learn to use the Course Schedule Planner without reading the bulk of our written instructions. This is because many audience members might be visual learners, who prefer picture based instructions to written instructions. Students also get a better understand of the location of certain tabs, buttons, and drop-down menus from our visuals than they do from our written instructions. Thus our visuals really help to support our written text, as outlined in Horton & Horton’s “Picture Perfect Proposals”. Finally our visuals also help the text appear to be less dense and easier to read, and thus improve the overall readability and appeal of our manual. This is an application of Redish’s mixing modes technique. This is because our audience will be unlikely to use our document if it is more confusing than the currently existing instructions on SIO.  
+
+####Adaptation Strategies
+
+A good manual provides an explicit schema for the tasks we wish for the audience to accomplish. We employed Smith and Goodman’s linear elaboration technique, as we had a very brief introduction in each section immediately followed by our instructions. We did this because we wanted our manual to be to the point. This is because our manual is primarily a reading to learn to do document. According to Redish these types of documents must be quick and serve an immediate purpose as the audience members want to get to the “doing” part as quickly as possible. We did not want a verbose introduction to each section as we felt the primary goal of our manual is to give the audience a short but incredibly detailed guide for using the Course Schedule Planner. We did not want the audience to waste any time reading a watered down version of our instructions before they got to our actual instructions. 
+
+We also wanted each set of instructions for a particular feature of the Course Schedule plan to be consistent to avoid confusing our audience. Thus each section had a small flowchart detailing what the section was going to talk about, a small written introduction, and a numbered list of action steps. Even though three different people worked on this manual we had all agreed to this general style beforehand, as we wanted the manual to read as if it had been written and designed by one collective mind instead of three disjoint minds. This was based on Redish’s principle of coherence and consistency. Also to aid with the readability of the document we used a consistent font style, used appropriate font changes to highlight section headings/information we wanted to stick out, and we also employed a serif typeface.
+
+Finally we employed a table of contents in an attempt to help guide those looking for a specific piece of information to the right page in our manual. Since some of our audience members might only need a small refresher on a particular part of the Course Schedule Planner, we wanted our guide to be able to direct people to the appropriate pages without them having to skim through the entire document first. 
+
+<a name="design"></a>
+<h3 data-magellan-destination="design">Design Choices</h3>
+
+The document was designed considering student’s context when registering or preparing to register. Generally, students are working at a desk with their laptop, either at home or some place on campus, when registering for classes. Therefore, they will be juggling one screen of information, their laptop, while also looking at the instruction booklet for registering. To accommodate this, as suggested by Graves and Graves, a smaller page size for the booklet was chosen. The 8.5x5.5” format provides this smaller, more manageable size, as well as a enough space for additional graphics that help to adapt the written information. Additionally, this format is both more easily distributed, and perceived as more of a helpful booklet, rather than an instruction manual. From CMU’s perspective, the booklet should be approachable by students and not appear to be a daunting instruction manual with regards to registration. This would make the registration process seem very complicated and something a student wouldn’t be able to do without assistance. 
+
+Looking inside the booklet, rather than considering pages to be individual entities, sections rely on the pages being viewed as a two-page spread. Individuals using the book will most likely have it lay flat on a desk for easy viewing, or on top of the keyboard of their laptop (which is well supported by the smaller height of the booklet). Instructions begin on the leftmost page, and the second, rightmost page either continues the instructions on it, with pictures being mixed in along the way, or it provides an overview graphic of the screen/task they are to be accomplishing. 
+
+A 3 column layout is used throughout the document, aside from the title page, which uses a 6 column layout. The 3 column layout allows for a variety of graphics, from entire screen shots, to small menu shots with accompanying text. Additionally, it creates room for the notations attached to the images. These notations add context to the images, essential for understanding their relationship to the written instructions. 
+
+The larger sections of the document are placed on the rightmost page of the spread, enabling a person who is quickly paging through the book to immediately find the section they are looking for without having to glance over to the back of the previous page. Additionally, this provides extra separation from previous sections, which helps to emphasize the difference between the various task sections. With the table of contents and the page numbers that are featured at the top of every page, browsing of the booklet is fairly efficient: individuals can use the page numbers to quickly find their position in the book, and then the individual sections are separated enough to stand out. 
+

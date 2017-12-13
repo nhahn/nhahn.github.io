@@ -16,11 +16,11 @@ export default function Tags({ pathContext }) {
           {post.length} post{post.length === 1 ? '' : 's'} tagged with {tag}
         </h1>
         <ul>
-          {post.map(({ id, frontmatter, excerpt }) => {
+          {post.map(({ id, frontmatter, fields, excerpt }) => {
             return (
               <li key={id}>
                 <h1>
-                  <GatsbyLink to={frontmatter.path}>
+                  <GatsbyLink to={fields.slug}>
                     {frontmatter.title}
                   </GatsbyLink>
                 </h1>

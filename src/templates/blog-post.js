@@ -28,11 +28,11 @@ export default function Template({ data, pathContext }) {
         <Tags list={post.frontmatter.tags || []} />
         <div className="navigation">
           {prev &&
-            <Link className="link prev" to={prev.frontmatter.path}>
+            <Link className="link prev" to={prev.fields.slug}>
               <BackIcon /> {prev.frontmatter.title}
             </Link>}
           {next &&
-            <Link className="link next" to={next.frontmatter.path}>
+            <Link className="link next" to={next.fields.slug}>
               {next.frontmatter.title} <ForwardIcon />
             </Link>}
         </div>
@@ -42,14 +42,16 @@ export default function Template({ data, pathContext }) {
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query BlogPostByPath($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        path
         tags
         title
+      }
+      fields {
+        slug
       }
     }
   }

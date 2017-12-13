@@ -16,7 +16,7 @@ export default function Index({ data }) {
           return (
             <div className="blog-post-preview" key={post.id}>
               <h1 className="title">
-                <GatsbyLink to={post.frontmatter.path}>
+                <GatsbyLink to={post.fields.slug}>
                   {post.frontmatter.title}
                 </GatsbyLink>
               </h1>
@@ -26,7 +26,7 @@ export default function Index({ data }) {
               <p>
                 {post.excerpt}
               </p>
-              <Link to={post.frontmatter.path}>Read more</Link>
+              <Link to={post.fields.slug}>Read more</Link>
             </div>
           );
         })}
@@ -40,11 +40,13 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt(pruneLength: 250)
+          fields {
+            slug
+          }
           id
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            path
           }
         }
       }

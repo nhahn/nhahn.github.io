@@ -1,4 +1,5 @@
 const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem')
 
 const createTagPages = (createPage, edges) => {
   const tagTemplate = path.resolve(`src/templates/tags.js`);
@@ -57,9 +58,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           timeToRead
           frontmatter {
             date
-            path
             tags
             title
+          }
+          fields {
+            slug
           }
         }
       }
@@ -79,9 +82,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       const prev = index === 0 ? false : posts[index - 1].node;
       const next = index === posts.length - 1 ? false : posts[index + 1].node;
       createPage({
-        path: node.frontmatter.path,
+        path: node.fields.slug,
         component: blogPostTemplate,
         context: {
+          slug: node.fields.slug,
           prev,
           next
         }
@@ -91,3 +95,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     return posts;
   })
 };
+
+exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+  const { createNodeField } = boundActionCreators
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
