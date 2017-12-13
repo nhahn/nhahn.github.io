@@ -1,13 +1,17 @@
 ---
-layout: post
 title:  Grip it Good Part 2
 date:   2014-5-5 16:29:56
 summary: |
     Taking our design idea from the <a href="/portfolio/grip_sense.html">fall</a>, we decided to go through with building one of the impliments: a force sensing can. Over the course of the semester, we prototyped and built a soda-can like prototype, using the actual outside of a soda-can, fitted with an internal chassis. The final version of our can is battery powered with a bluetooth module for communication back to a MATLAB program that reports the results. 
 image: ./images/device_pic.jpg
-categories: portfolio
 code: https://github.com/nhahn/gripitgood
 document: ./bme_report.pdf
+tags:
+  - undergraduate
+  - BME
+  - hardware
+  - MATLAB
+  - software
 collaborators:
     - Ethan Ungchusri: ethanungchusri@gmail.com
     - Tomas Dardet: tjavier.2010@gmail.com

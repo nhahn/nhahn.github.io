@@ -1,10 +1,11 @@
 ---
-layout: post
 title:  Registration Booklet
 date:   2014-4-20 16:29:56
 summary: For my Writing for the Professions class, my group and I created an instructional booklet that detailed the steps required to register for classes. The booklet covers creating your schedule, registration, and waitlist management. 
 image: /assets/img/registration_book.png
-categories: portfolio
+tags:
+  - undergraduate
+  - design
 collaborators:
     - Amira Abu-Saba: amira.abusaba@gmail.com
     - Niteesh Sundaram: nsundara@andrew.cmu.edu
@@ -22,54 +23,6 @@ collaborators:
 </div>
 <a name="booklet"></a>
 <h3 data-magellan-destination="booklet">Booklet</h3>
-
-<script type="text/javascript" src="/assets/ebook/js/swfobject.js"></script>
-<script type="text/javascript" src="/assets/ebook/js/swfaddress.js"></script>
-<script type="text/javascript" src="/assets/ebook/js/swfmacmousewheel.js"></script>
-
-<div style="width: 100%; height: 400px;">
-    <div id="ebookcontainer">
-        <!-- Your ebook will be displayed here. In case user hasn't got actual version of Adobe Flash Player, the below description
-        will appear.
-        -->
-        Hello, you either have JavaScript turned off or an old version of Adobe’s Flash Player.
-        <a href="http://www.macromedia.com/go/getflash/">Get Flash/</a> 
-    </div> 
-</div>
-
-<script language="JavaScript" type="text/javascript">			
-
-    var flashvars = {};
-    /* Adjust setting below to your personal needs (Don't forget to remove '//' from the beginning of the line)  */
-
-    flashvars.locales = "en_EN";
-    //flashvars.bookPath = "/assets/ebook/content/publication";     //path to folder with publication files
-    //flashvars.skinPath = "/assets/ebook/content/skin/skin_1.swf"; //path to viewer skin (swf)
-    //flashvars.useSounds = "true";                         //use sounds ("true=yes, "false"=no)
-    //flashvars.soundsPath = "/assets/ebook/content/snd/";          //path to folder with sound
-    //flashvars.configPath = "/assets/ebook/config/";               //path to folder with eBook configuration (xml)
-    //flashvars.logoPath = "/assets/ebook/content/logo.png";        //path to logo (png or jpg)
-    //flashvars.logoURL = "www.yourpage.pl";                //URL logo link		
-    //flashvars.logoURLWindow = "_blank";                   //open URL in new window ("_blank") or in the same window ("_self")
-    //flashvars.print = "true";
-    //flashvars.save = "true";
-    //flashvars.dragSpeed = "5";				            //speed of page flip (1-7)
-    //flashvars.print = "true";
-    //flashvars.save = "true";
-    //flashvars.buttons = "save, print, zoom";
-
-
-    /* eBook dimension in percentages or in pixels  (var w = "100%", var w = "800" ) */
-    var w = "100%";	//width
-    var h = "100%";	//height
-
-    var params = {};
-    params.allowfullscreen = "true";
-    params.allowscriptaccess = "always";
-    params.allownetworking = "all";
-    //params.wmode = "transparent"; //uncomment for transparent eBook background
-    swfobject.embedSWF( "/assets/ebook/ebook.swf", "ebookcontainer", w, h, "10.0.0", "/assets/ebook/js/expressInstall.swf", flashvars, params );
-</script>
 
 <a name="rhet"></a>
 <h3 data-magellan-destination="rhet">Rhetorical Situation</h3>

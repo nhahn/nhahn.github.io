@@ -1,11 +1,14 @@
 ---
-layout: post
 title: Knowledge Accelerator (KA)  
 date:   2015-12-30 16:29:56
 summary: The Knowledge Accelerator (KA) uses crowdworkers to synthesize different information sources on the web in response to a query. We prototyped this system in order to explore crowdsourcing complex, high context tasks in a microtask enviornment. Our system performed quite well, checkout the answers it produced! 
-image: /assets/img/ka.png
-categories: portfolio
-document: /assets/documents/ka.pdf
+image: ./images/ka.png
+document: ./ka.pdf
+tags:
+  - PhD
+  - HCI
+  - software
+  - ruby on rails
 collaborators:
     - Joseph Chang: josephcc@cmu.edu 
     - Ji Eun Kim: JiEun.Kim@us.bosch.com
@@ -28,7 +31,7 @@ Crowdsourcing offers a powerful new paradigm for online work. However, real worl
 <a name="paper"></a>
 <h3 data-magellan-destination="paper">Paper</h3>
 
-<iframe src="/assets/documents/ka.pdf" data-auto-height="true" data-aspect-ratio="0.772727272727273" scrolling="no" width="100%" height="700" frameborder="0"></iframe>
+<iframe src="./ka.pdf" data-auto-height="true" data-aspect-ratio="0.772727272727273" scrolling="no" width="100%" height="700" frameborder="0"></iframe>
 
 <a name="appendix"></a>
 <h3 data-magellan-destination="appendix">Appendix</h3>

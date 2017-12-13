@@ -6,7 +6,7 @@ image: ./dance_fest.png
 document: ./dancefest_report.pdf
 tags:
   - undergraduate
-  - hci
+  - HCI
   - design
 collaborators:
   - Madeline Chan: maddehline@gmail.com

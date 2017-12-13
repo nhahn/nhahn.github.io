@@ -1,10 +1,13 @@
 ---
-layout: post
 title:  Greenlight - Mobile 
 date:   2013-12-1 21:46:56
 summary: As an addition to the Greenlight project, I worked on creating a mobile application that allows you to control the system and receive information about its current status. Additionally, this application works with a Bluetooth Low Energy beacon to detect if you are close to a Greelight-enabled room and alerts you appropriately. 
-image: /assets/img/greenlight-mobile.png
-categories: portfolio
+image: ./images/greenlight-mobile.png
+tags:
+  - undergraduate
+  - IS
+  - software
+  - Android
 code: https://github.com/nhahn/GreenLight_Android
 ---
 
@@ -23,12 +26,12 @@ code: https://github.com/nhahn/GreenLight_Android
 
 [Greenlight][3] is a daylight harvesting system my Information Systems team created (you can read more about it by following the link). The Android application I created is an extension of this -- it allows you to view any information you normally see through the web application on your phone. It does this by connecting to our Ruby on Rails server through an API I created to pair with the Android application. After using a token for authentication, users can view information about a room, including power consumption and sensor graphs, as well as control the room's lights. As an extra feature, the application can detect with a user is in a room by using a Bluetooth LE beacon. 
 
-<img class="th" src="/assets/img/greenlight_mobile/Greenlight_Mobile.002.png">
+<img class="th" src="./images/greenlight_mobile/Greenlight_Mobile.002.png">
 
 <a name="architecture"></a>
 <h3 data-magellan-destination="architecture">Architecture</h3>
 
-<img class="th" src="/assets/img/greenlight_mobile/Greenlight_Mobile.004.png">
+<img class="th" src="./images/greenlight_mobile/Greenlight_Mobile.004.png">
 
 The app utilizes two core components of the Android framework to manage its connection to the Ruby on Rails application. For authentication, Android's AbstactAccountAuthenticator class was implemented to allow for a more structured authentication process. This allows a user's
 [Greenlight][3] account to appear in the general settings screen, and allow for background Bluetooth scanning preferences to be adjusted. 
@@ -42,7 +45,7 @@ Additionally the content provider allows you to follow rails associations, so mo
 <a name="bluetooth"></a>
 <h3 data-magellan-destination="bluetooth">Proximity Sensor</h3>
 
-<img class="th" src="/assets/img/greenlight_mobile/Greenlight_Mobile.005.png">
+<img class="th" src="./images/greenlight_mobile/Greenlight_Mobile.005.png">
 
 The proximity detection portion of the application was created using a Bluetooth LE beacon. I used the [ReadBearLabs BLE Mini][1] and flashed a custom firmware image onto it. The firmware image implemented the Apple iBeacon protocol. This has 4 parts to it: 
 

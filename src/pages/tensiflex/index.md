@@ -1,11 +1,12 @@
 ---
-layout: post
 title:  Alternative ACL Fixation Device
 date:   2013-4-29 21:46:56
 summary: For my Surgery for Engineer's project, my team did an evaluation of the current techniques utilized for Anterior Cruciate Ligament (ACL) repair. After reviewing the fixation techniques, we determined that current ACL fixation devices lack the ability to tension a graft post-fixation. Therefore, we developed TensiFix -a device that utilizes an interference screw to provide post-fixation tensioning.  
-image: /assets/img/surgery.png
-document: /assets/documents/tensifix.pdf
-categories: portfolio
+image: ./images/surgery.png
+document: ./tensifix.pdf
+tags:
+  - undergraduate
+  - BME
 collaborators:
     - Jessica Yuan: jxy@andrew.cmu.edu
     - Anne Alcasid: aalcasid@andrew.cmu.edu
@@ -40,10 +41,10 @@ The TensiFixTM fixation device allows the surgeon to fix a graft at both ends, a
 
 <div class="row">
     <div class="medium-8 columns">
-        <img class="th" src="/assets/img/acl_pic/screw_cross_section.jpg">
+        <img class="th" src="./images/acl_pic/screw_cross_section.jpg">
     </div>
     <div class="medium-4 columns">
-        <img class="th" src="/assets/img/acl_pic/screw_exploded.png">
+        <img class="th" src="./images/acl_pic/screw_exploded.png">
     </div>
 </div>
 
@@ -64,7 +65,7 @@ TensiFixTM is able to easily increase the tension during the ACL reconstruction.
 
 <div class="row">
     <div class="medium-4 columns">
-        <img class="th" src="/assets/img/acl_pic/insertion_cropped.png">
+        <img class="th" src="./images/acl_pic/insertion_cropped.png">
     </div>
     <div class="medium-8 columns">
         <p>
@@ -76,7 +77,7 @@ The device with the graft attached to it will be pulled through the end of the f
 </div>
 
 <ul class="small-block-grid-2">
-    <li><img class="th" src="/assets/img/acl_pic/flattening_cropped.png"></li>
-    <li><img class="th" src="/assets/img/acl_pic/tightening_cropped.png"></li>
+    <li><img class="th" src="./images/acl_pic/flattening_cropped.png"></li>
+    <li><img class="th" src="./images/acl_pic/tightening_cropped.png"></li>
 </ul>
 

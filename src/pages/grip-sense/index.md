@@ -1,11 +1,14 @@
 ---
-layout: post
 title:  Grip it Good
 date:   2013-12-5 21:46:56
 summary: For my BME design capstone project, my team is working on designing a novel way to detect the grip force of patients in occupational therapy. We decided to select common, every-day objects and embed them with force sensors. This would increase the functionality and association of the measured grip force to the task being performed. 
-image: /assets/img/grip_it_good.png
-document: /assets/documents/bme_report_fall.pdf
-categories: portfolio
+image: ./images/grip_it_good.png
+document: ./bme_report_fall.pdf
+tags:
+  - undergraduate
+  - BME
+  - hardware
+  - design
 collaborators:
     - Ethan Ungchusri: ethanungchusri@gmail.com
     - Tomas Dardet: tjavier.2010@gmail.com
@@ -70,9 +73,9 @@ Since the ultimate goal of treatment is to help patients increase functional ind
 <h3 data-magellan-destination="brainstorming">Brainstorming</h3>
 
 <ul class="small-block-grid-3">
-    <li><img class="th" src="/assets/img/grip/bopit.jpg">Rehabilitation Bop-it</li>
-    <li><img class="th" src="/assets/img/grip/grip_ring.jpg">The Grip Ring</li>
-    <li><img class="th" src="/assets/img/grip/nate.jpg">The NATE</li>
+    <li><img class="th" src="./images/grip/bopit.jpg">Rehabilitation Bop-it</li>
+    <li><img class="th" src="./images/grip/grip_ring.jpg">The Grip Ring</li>
+    <li><img class="th" src="./images/grip/nate.jpg">The NATE</li>
 </ul>
 
 
@@ -86,9 +89,9 @@ The Suitcase consists of several objects, representative of objects encountered 
 
 This is the example of the "can" object: 
 <ul class="small-block-grid-3">
-    <li><img class="th" src="/assets/img/grip/1.png"></li>
-    <li><img class="th" src="/assets/img/grip/2.png"></li>
-    <li><img class="th" src="/assets/img/grip/3.png"></li>
+    <li><img class="th" src="./images/grip/1.png"></li>
+    <li><img class="th" src="./images/grip/2.png"></li>
+    <li><img class="th" src="./images/grip/3.png"></li>
 </ul>
 
 #####Intended Use for Patients 

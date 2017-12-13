@@ -1,11 +1,13 @@
 ---
-layout: post
 title:  UCRE Contextual Design - (Re)Iterate
 date:   2012-10-1 21:46:56
 summary: For my User Centered Research and Evaluation class (UCRE), half of the semester was focused on a contextual design project. For this project, my team and I explored the idea of how we could improve the way students complete assignments. We developed the (Re)Iterate solution, an assignment portal that would allow for students to perform iterations on assignment and receive feedback from instructors and other students, all while tracking their various iterations. 
-image: /assets/img/ucre.jpg
-document: /assets/documents/reiterate.pdf
-categories: portfolio
+image: ./images/ucre.jpg
+document: ./reiterate.pdf
+tags:
+  - undergraduate
+  - HCI
+  - design
 collaborators: 
     - Abhay Buch: abhayb@andrew.cmu.edu
     - Stephanie Butler: sbutler@gmail.com
@@ -49,14 +51,14 @@ The product will track substantive changes that students make during their itera
 
 For example, in this storyboard, a student wants to go back to see something they liked in their previous iteration:
 <div class="row">
-    <img class="th" src="/assets/img/ucre/storyboard_1.png">
+    <img class="th" src="./images/ucre/storyboard_1.png">
 </div>
 
 These next two storyboards detail the interaction a student might have with their professor:
 
 <div class="row">
-    <img class="th" src="/assets/img/ucre/storyboard_2.png">
+    <img class="th" src="./images/ucre/storyboard_2.png">
 </div>
 <div class="row">
-    <img class="th" src="/assets/img/ucre/storyboard_3.png">
+    <img class="th" src="./images/ucre/storyboard_3.png">
 </div>

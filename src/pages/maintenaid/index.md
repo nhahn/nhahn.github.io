@@ -3,9 +3,13 @@ layout: post
 title:  Maintenaid 
 date:   2011-12-1 21:46:56
 summary: This was an application created for maintenance workers for my Designing Human Centered Software class. We saw that most maintenance workers utilize paper systems to manage and organize work requests. To help improve workers' ability to coordinate and log requests, we performed a contextual inquiry to gather what features workers would want in a system. After gathering the requirements, we went through 3 prototyping stages, finally producing an Android app. 
-image: /assets/img/maintenaid.png
-categories: portfolio
+image: ./images/maintenaid.png
 code: https://github.com/nhahn/maintenaid
+tags:
+  - undergraduate
+  - HCI
+  - software
+  - Android
 collaborators:
     - Jillian Goodwin: jpgoodwyn@gmail.com
     - Sean Tai: stai@andrew.cmu.edu
@@ -69,14 +73,14 @@ We also defined 3 extra tasks we wanted the application to be able to do in the 
 <h3 data-magellan-destination="lofi">Lo-Fi Prototype</h3>
 
 <ul class="medium-block-grid-4">
-    <li><img class="th" src="/assets/img/maintenaid/lofi/mapscreen.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/pastRequest.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/refineScreen.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/reportScreen.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/requestApartments.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/startScreen.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/TaskInfo.jpg"></li>
-    <li><img class="th" src="/assets/img/maintenaid/lofi/taskList.jpg"></li>
+    <li><img class="th" src="./images/lofi/mapscreen.jpg"></li>
+    <li><img class="th" src="./images/lofi/pastRequest.jpg"></li>
+    <li><img class="th" src="./images/lofi/refineScreen.jpg"></li>
+    <li><img class="th" src="./images/lofi/reportScreen.jpg"></li>
+    <li><img class="th" src="./images/lofi/requestApartments.jpg"></li>
+    <li><img class="th" src="./images/lofi/startScreen.jpg"></li>
+    <li><img class="th" src="./images/lofi/TaskInfo.jpg"></li>
+    <li><img class="th" src="./images/lofi/taskList.jpg"></li>
 </ul>
 
 

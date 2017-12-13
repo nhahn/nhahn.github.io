@@ -6,9 +6,9 @@ image: ./creamery.png
 code: https://github.com/nhahn/amcreamery
 tags: 
   - undergraduate
-  - information systems
+  - IS
   - ruby on rails
-  - software development
+  - software
 ---
 
 

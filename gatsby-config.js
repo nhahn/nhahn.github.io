@@ -28,7 +28,8 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
+          'gatsby-remark-smartypants',
+          'gatsby-remark-autolink-headers'
         ]
       }
     },
@@ -48,5 +49,17 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: `Nathan Hahn's Website`,
+        description: 'The personal website of PhD student Nathan Hahn',
+        short_name: 'NHahn Site',
+        background_color: 'white',
+        theme_color: '#002635',
+        orientation: 'portrait',
+        display: 'minimal-ui'
+      }
+    }
   ]
 }

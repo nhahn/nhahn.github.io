@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  EcoTouch
 date:   2014-5-12 16:29:56
 summary: EcoTouch was developed for the Stony Brook Watershed Association as part of my undergraduate HCI Capstone project. EcoTouch is a game that helps individuals understand the impact of using sustainable systems in their home. It uses a multitouch table with augmented reality markers to create a physical and digital experience, where users complete simulations of attempting to make a more sustainable home. 
@@ -7,11 +6,16 @@ image: ./eco_touch.jpeg
 categories: portfolio
 code: https://github.com/ChiTheHotDogGuy11/WatershedExhibit
 document: ./environment_report.pdf
+tags:
+  - undergraduate
+  - HCI
+  - software
+  - javascript
 collaborators:
-    - Cole Heiner: cheiner@andrew.cmu.edu
-    - Shan Huang: yemount@gmail.com
-    - Justin Greet: justin.greet10@gmail.com
-    - Emily Tsai: cetsai@andrew.cmu.edu
+  - Cole Heiner: cheiner@andrew.cmu.edu
+  - Shan Huang: yemount@gmail.com
+  - Justin Greet: justin.greet10@gmail.com
+  - Emily Tsai: cetsai@andrew.cmu.edu
 ---
 
 
@@ -41,7 +45,7 @@ From this research, we discovered numerous factors that influence a visitor’s 
 <br/>
 <br/>
 
-<img class="th" src="/assets/img/ecotouch/museum_model.png">
+<img class="th" src="./images/ecotouch/museum_model.png">
 Our model that we used to explain an individual's exhibit experience.
 
 <a name="ideas"></a>
@@ -55,13 +59,13 @@ Regarding gameplay, we wanted to give users tasks that would challenge them to l
 
 <div class="row">
     <div class="medium-4 columns">
-        <img class="th" src="/assets/img/ecotouch/tabletop_idea.png">
+        <img class="th" src="./images/ecotouch/tabletop_idea.png">
     </div>
     <div class="medium-4 columns">
-        <img class="th" src="/assets/img/ecotouch/energy_flow_idea.png">
+        <img class="th" src="./images/ecotouch/energy_flow_idea.png">
     </div>
     <div class="medium-4 columns">
-        <img class="th" src="/assets/img/ecotouch/augmented_reality_idea.png">
+        <img class="th" src="./images/ecotouch/augmented_reality_idea.png">
     </div>
 </div>
 Some concepts from ideation.
@@ -75,13 +79,13 @@ Some concepts from ideation.
         <p>The concept for the game is to have players build their own environmentally sustainable building while learning about the various features that go into it. Players can choose from a number of different features, such as solar panels, geothermal heating and cooling, and rain barrels, which can be incorporated into their building. The game also allows for players to change the size of their building and the environmental region it is located in. All of these variables impact the overall energy consumption and savings of a player’s building, so players are challenged to make informed decisions about the features they add. Furthermore, players are restricted by a budget that reflects real world costs, giving players incentive to weigh the up-front costs against long term benefits. At the end of the game, players are presented with a graph of their building’s projected energy consumption.</p>
     </div>
     <div class="medium-6 columns">
-        <img class="th" src="/assets/img/ecotouch/info_screen.png"/>
+        <img class="th" src="./images/ecotouch/info_screen.png"/>
         <p>System Information</p>
     </div>
 </div>
 <div class="row">
     <div class="medium-6 columns">
-        <img class="th" src="/assets/img/ecotouch/preference_screen.png"/>
+        <img class="th" src="./images/ecotouch/preference_screen.png"/>
         <p>User Preferences</p>
     </div>
     <div class="medium-6 columns">
@@ -95,7 +99,7 @@ Some concepts from ideation.
         <p>In the following section, we revisit each iteration of the prototype and explain the process as we improve on and test with each version, from start to finish.</p>
     </div>
     <div class="medium-6 columns">
-        <img class="th" src="/assets/img/ecotouch/round_screen.png"/>
+        <img class="th" src="./images/ecotouch/round_screen.png"/>
         <p>Round Ending Screen</p>
     </div>
 </div>
