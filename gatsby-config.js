@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     author: 'You!',
     title: `Gatsby Default (Blog) Starter`,
+    description: `The personal website of PhD student Nathan Hahn`
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -37,11 +38,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-46748250-1`,
       },
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
+    'gatsby-plugin-antd',
+    `gatsby-plugin-styled-components`,
+    
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',

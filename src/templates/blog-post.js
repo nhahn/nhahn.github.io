@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import BackIcon from 'react-icons/lib/fa/chevron-left';
 import ForwardIcon from 'react-icons/lib/fa/chevron-right';
+import Parser from 'html-react-parser'
 
 import Link from '../components/Link';
 import Tags from '../components/Tags';
@@ -21,10 +22,9 @@ export default function Template({ data, pathContext }) {
         <h2 className="date">
           {post.frontmatter.date}
         </h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <div className="blog-post-content">
+          {Parser(post.html)}
+        </div>
         <Tags list={post.frontmatter.tags || []} />
         <div className="navigation">
           {prev &&
