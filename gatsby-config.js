@@ -3,8 +3,8 @@ const { name } = require('./package.json');
 module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : `/`,
   siteMetadata: {
-    author: 'You!',
-    title: `Gatsby Default (Blog) Starter`,
+    author: 'Nathan Hahn',
+    title: `Nathan's Personal Website`,
     description: `The personal website of PhD student Nathan Hahn`
   },
   plugins: [
@@ -45,7 +45,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     'gatsby-plugin-antd',
     `gatsby-plugin-styled-components`,
-    
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',
@@ -60,9 +60,23 @@ module.exports = {
         description: 'The personal website of PhD student Nathan Hahn',
         short_name: 'NHahn Site',
         background_color: 'white',
+        start_url: "/",
         theme_color: '#002635',
         orientation: 'portrait',
-        display: 'minimal-ui'
+        display: 'minimal-ui',
+        icon: `${__dirname}/static/favicon.jpg`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-192x192.jpg`,
+            sizes: `192x192`,
+            type: `image/jpg`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.jpg`,
+            sizes: `512x512`,
+            type: `image/jpg`,
+          },
+        ],
       }
     }
   ]

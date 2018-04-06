@@ -1,23 +1,12 @@
-# gatsby-blog-starter-kit
+# Nathan's Website
 
-[![Build Status](https://travis-ci.org/DSchau/gatsby-blog-starter-kit.svg?branch=master)](https://travis-ci.org/DSchau/gatsby-blog-starter-kit) [![Greenkeeper badge](https://badges.greenkeeper.io/DSchau/gatsby-blog-starter-kit.svg)](https://greenkeeper.io/)
+My [personal website](http://nphahn.com) that has information about my undergraduate projects, graduate projects, as well as the work I've been doing on the Bento project. 
 
-Use this starter kit to jump start (or use as a reference) a great blog with [gatsby][gatsby]
+## Tech
 
-![Blog example](./assets/gatsby-blog-starter-kit.png)
+This blog was build with [Gatsby][gatsby] -- based on the [Gatsby Starter Blog][gatsby-starter-blog].
 
-## Features
-
-1. Blog post listing with previews for each blog post
-1. Navigation between posts with a previous/next post button
-1. Tags and tag navigation
-1. Responsive images via [gatsby-remark-images][gatsby-remark-images]
-
-## Set up
-
-1. Clone this repo
-1. `yarn`
-1. `yarn start`
+Feel free to clone and change this repo to your liking. 
 
 [gatsby]: https://www.gatsbyjs.org/
-[gatsby-remark-images]: https://www.gatsbyjs.org/docs/packages/gatsby-remark-images/
+[gatsby-starter-blog]: https://github.com/gatsbyjs/gatsby-starter-blog
