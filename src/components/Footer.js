@@ -10,6 +10,7 @@ const Footer = () => {
         marginBottom: `1.45rem`,
       }}
     >
+    <p>Header animation from Chris Johnson <a href="https://codepen.io/jhnsnc/pen/Mprdaa">on Codepen</a></p>
     </div>
          
     )

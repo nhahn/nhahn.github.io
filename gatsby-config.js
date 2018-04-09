@@ -9,7 +9,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-next',
-    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -30,22 +29,25 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-autolink-headers'
+          'gatsby-remark-autolink-headers',
+          "gatsby-remark-component"
         ]
       }
     },
     'gatsby-plugin-sharp',
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-46748250-1`,
       },
     },
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    'gatsby-plugin-antd',
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-less`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',

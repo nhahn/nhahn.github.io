@@ -1,5 +1,7 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem')
+const fsExtra = require('fs-extra');
+const fs = require('fs')
 
 const createTagPages = (createPage, edges) => {
   const tagTemplate = path.resolve(`src/templates/tags.js`);
@@ -106,5 +108,57 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       node,
       value,
     })
+    createNodeField({
+      name: `category`,
+      node,
+      value: value.split('/')[1],
+    })
+    
+    //Find the image or document
+    let dir = path.join(process.cwd(), 'src/pages', value),
+        files=fs.readdirSync(dir), doc, img;
+    
+    files.forEach(file => {
+      let fullPath = path.join(value, file),
+          extension = path.extname(file);
+      if (extension == '.pdf')
+        doc = file;
+      if (extension == '.png' || extension == '.jpg' || extension == '.jpeg')
+        img = file;
+    })
+    
+    if (doc) {
+      createNodeField({
+        name: `docPath`,
+        node,
+        value: doc,
+      })
+    } 
+    if (img) {
+      createNodeField({
+        name: `imgPath`,
+        node,
+        value: img,
+      })
+    }
+  } else if (node.internal.type === 'File' && node.internal.mediaType === `application/pdf`) {
+    let source = `${__dirname}/src/pages`;
+    let destination = ''
+    if (node.dir.includes(source)) {  
+      const relativeToDest = node.dir.replace(source, '');
+      const newPath = path.join(
+          process.cwd(),
+          'public',
+          destination,
+          relativeToDest,
+          node.base
+      );
+      
+      fsExtra.copy(node.absolutePath, newPath, err => {
+        if (err) {
+          console.error('Error copying file', err);
+        }
+      });
+    }
   }
 }

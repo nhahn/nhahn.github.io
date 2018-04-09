@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import { rhythm, options } from "../utils/typography" 
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -14,7 +15,7 @@ export default class Template extends React.Component {
     const { location } = this.props;
 
     return (
-      <div>
+      <div style={{backgroundColor: '#f3f3f3'}}>
         <Helmet
           title="Nathan's Site"
           meta={[
@@ -25,10 +26,8 @@ export default class Template extends React.Component {
         <Header location={location}/>
         <div
           style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
+            margin: `${rhythm(1/2)} auto`,
+            padding: `0px ${rhythm(1)}`
           }}
         >
           {this.props.children()}

@@ -2,20 +2,30 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import BackIcon from 'react-icons/lib/fa/chevron-left';
 import ForwardIcon from 'react-icons/lib/fa/chevron-right';
-import Parser from 'html-react-parser'
+import rehypeReact from "rehype-react"
+import Img from "gatsby-image";
 
 import Link from '../components/Link';
 import Tags from '../components/Tags';
 
 import '../css/blog-post.css';
 
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  //components: { "my-component": MyComponent }
+}).Compiler
+
 export default function Template({ data, pathContext }) {
   const { markdownRemark: post } = data;
   const { next, prev } = pathContext;
+  
+  //TODO for unpublished: <meta name="robots" content="noindex,nofollow>
+  
   return (
     <div className="blog-post-container">
-      <Helmet title={`Gatsby Blog - ${post.frontmatter.title}`} />
+      <Helmet title={`Gatsby Blog - ${post.frontmatter.title}`}/>
       <div className="blog-post">
+        <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
         <h1 className="title">
           {post.frontmatter.title}
         </h1>
@@ -23,7 +33,7 @@ export default function Template({ data, pathContext }) {
           {post.frontmatter.date}
         </h2>
         <div className="blog-post-content">
-          {Parser(post.html)}
+          {renderAst(post.htmlAst)}
         </div>
         <Tags list={post.frontmatter.tags || []} />
         <div className="navigation">
@@ -44,7 +54,7 @@ export default function Template({ data, pathContext }) {
 export const pageQuery = graphql`
   query BlogPostByPath($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      htmlAst
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         tags
@@ -52,6 +62,13 @@ export const pageQuery = graphql`
       }
       fields {
         slug
+        imgPath {
+          childImageSharp {
+            sizes(maxWidth: 800) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
