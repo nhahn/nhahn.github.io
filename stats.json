@@ -1,0 +1,292 @@
+{
+  "assetsByChunkName": {
+    "path---tags-i-os": [
+      "path---tags-i-os-7432ca5c282c39aeb9a4.js",
+      "path---tags-i-os-7432ca5c282c39aeb9a4.js.map"
+    ],
+    "path---undergrad-registration-booklet": [
+      "path---undergrad-registration-booklet-580e8c505765b67635a7.js",
+      "path---undergrad-registration-booklet-580e8c505765b67635a7.js.map"
+    ],
+    "path---tags-interaction-techniques": [
+      "path---tags-interaction-techniques-2f1ec25dc081c69a5034.js",
+      "path---tags-interaction-techniques-2f1ec25dc081c69a5034.js.map"
+    ],
+    "path---tags-ruby-on-rails": [
+      "path---tags-ruby-on-rails-8c7ea7880bb6bbf9fe8e.js",
+      "path---tags-ruby-on-rails-8c7ea7880bb6bbf9fe8e.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-2cb201df6fe5d85244f7.js",
+      "component---src-pages-index-js-2cb201df6fe5d85244f7.js.map"
+    ],
+    "path---tags-hci": [
+      "path---tags-hci-51197b227659585729bd.js",
+      "path---tags-hci-51197b227659585729bd.js.map"
+    ],
+    "path---research-distil": [
+      "path---research-distil-66ac2161b215da4ac8de.js",
+      "path---research-distil-66ac2161b215da4ac8de.js.map"
+    ],
+    "component---src-pages-research-js": [
+      "component---src-pages-research-js-3eca2478faa4ed888c4b.js",
+      "component---src-pages-research-js-3eca2478faa4ed888c4b.js.map"
+    ],
+    "path---undergrad-greenlight": [
+      "path---undergrad-greenlight-dfa910ca5cd68a7ca782.js",
+      "path---undergrad-greenlight-dfa910ca5cd68a7ca782.js.map"
+    ],
+    "path---tags-annotation": [
+      "path---tags-annotation-2d8b2818651fefb5e008.js",
+      "path---tags-annotation-2d8b2818651fefb5e008.js.map"
+    ],
+    "component---src-templates-tags-js": [
+      "component---src-templates-tags-js-9a3d4a2e7b39325f1ef9.js",
+      "component---src-templates-tags-js-9a3d4a2e7b39325f1ef9.js.map"
+    ],
+    "path---undergrad-greenlight-mobile": [
+      "path---undergrad-greenlight-mobile-9b41853f7e7a8b0a4726.js",
+      "path---undergrad-greenlight-mobile-9b41853f7e7a8b0a4726.js.map"
+    ],
+    "path---tags": [
+      "path---tags-474a9c07c05f57155b42.js",
+      "path---tags-474a9c07c05f57155b42.js.map"
+    ],
+    "path---undergrad-reiterate": [
+      "path---undergrad-reiterate-a75e0739b0dd03b860b9.js",
+      "path---undergrad-reiterate-a75e0739b0dd03b860b9.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---tags-design": [
+      "path---tags-design-e837cf0268c7ff875429.js",
+      "path---tags-design-e837cf0268c7ff875429.js.map"
+    ],
+    "path---tags-javascript": [
+      "path---tags-javascript-6c810653175d74cfbed1.js",
+      "path---tags-javascript-6c810653175d74cfbed1.js.map"
+    ],
+    "path---research-ka": [
+      "path---research-ka-f19c0470bab89cc3ba2d.js",
+      "path---research-ka-f19c0470bab89cc3ba2d.js.map"
+    ],
+    "path---undergrad-eco-touch": [
+      "path---undergrad-eco-touch-e670f73b68c6d4a91da9.js",
+      "path---undergrad-eco-touch-e670f73b68c6d4a91da9.js.map"
+    ],
+    "path---tags-bme": [
+      "path---tags-bme-7ff72bab606d6102a867.js",
+      "path---tags-bme-7ff72bab606d6102a867.js.map"
+    ],
+    "path---undergrad-grip-sense": [
+      "path---undergrad-grip-sense-e0dbfcd5f6508f84dfa7.js",
+      "path---undergrad-grip-sense-e0dbfcd5f6508f84dfa7.js.map"
+    ],
+    "path---tags-selfsourcing": [
+      "path---tags-selfsourcing-577c8fc8b1df60203aec.js",
+      "path---tags-selfsourcing-577c8fc8b1df60203aec.js.map"
+    ],
+    "path---tags-hardware": [
+      "path---tags-hardware-94c46f5328fc3f09b97d.js",
+      "path---tags-hardware-94c46f5328fc3f09b97d.js.map"
+    ],
+    "path---working": [
+      "path---working-d7a60af93fb78448d4e3.js",
+      "path---working-d7a60af93fb78448d4e3.js.map"
+    ],
+    "path---tags-matlab": [
+      "path---tags-matlab-87c3aeba78cc13b4e2a0.js",
+      "path---tags-matlab-87c3aeba78cc13b4e2a0.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---research": [
+      "path---research-f905431e13bbd6c173be.js",
+      "path---research-f905431e13bbd6c173be.js.map"
+    ],
+    "path---undergrad-creamery": [
+      "path---undergrad-creamery-785add4f35e50f614718.js",
+      "path---undergrad-creamery-785add4f35e50f614718.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-afa9ffc4838d20c41568.js",
+      "component---src-templates-blog-post-js-afa9ffc4838d20c41568.js.map"
+    ],
+    "path---tags-categorization": [
+      "path---tags-categorization-3982293fdbd4a8205b9f.js",
+      "path---tags-categorization-3982293fdbd4a8205b9f.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-edf725d69b9c0f66e96c.js",
+      "component---src-layouts-index-js-edf725d69b9c0f66e96c.js.map"
+    ],
+    "path---undergrad-maintenaid": [
+      "path---undergrad-maintenaid-f0441ac6dbdebc52aa80.js",
+      "path---undergrad-maintenaid-f0441ac6dbdebc52aa80.js.map"
+    ],
+    "path---research-highlighting": [
+      "path---research-highlighting-864a0138ff983bd5c3c6.js",
+      "path---research-highlighting-864a0138ff983bd5c3c6.js.map"
+    ],
+    "path---index": [
+      "path---index-9835b73cded41f06554e.js",
+      "path---index-9835b73cded41f06554e.js.map"
+    ],
+    "component---src-pages-resume-js": [
+      "component---src-pages-resume-js-68c57356a31b44020289.js",
+      "component---src-pages-resume-js-68c57356a31b44020289.js.map"
+    ],
+    "path---undergrad-grip-it-good": [
+      "path---undergrad-grip-it-good-b496b28399b3c1890da3.js",
+      "path---undergrad-grip-it-good-b496b28399b3c1890da3.js.map"
+    ],
+    "path---tags-crowdsourcing": [
+      "path---tags-crowdsourcing-178bb72bb5bab700229f.js",
+      "path---tags-crowdsourcing-178bb72bb5bab700229f.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-98d33e62ecaea5947486.js",
+      "component---src-pages-404-js-98d33e62ecaea5947486.js.map"
+    ],
+    "commons": [
+      "commons-8ad70a122f85d1657912.js",
+      "build-js-styles.css",
+      "commons-8ad70a122f85d1657912.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-undergrad-js": [
+      "component---src-pages-undergrad-js-e400e33c9e1169ec6803.js",
+      "component---src-pages-undergrad-js-e400e33c9e1169ec6803.js.map"
+    ],
+    "path---research-searchscape": [
+      "path---research-searchscape-cd2951f3deeb2479cd45.js",
+      "path---research-searchscape-cd2951f3deeb2479cd45.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---research-playwrite": [
+      "path---research-playwrite-ac35e658f7814c40d575.js",
+      "path---research-playwrite-ac35e658f7814c40d575.js.map"
+    ],
+    "component---src-pages-personal-js": [
+      "component---src-pages-personal-js-f2af33091ecfb094d280.js",
+      "component---src-pages-personal-js-f2af33091ecfb094d280.js.map"
+    ],
+    "component---src-pages-working-js": [
+      "component---src-pages-working-js-8efc089201f401a58b1a.js",
+      "component---src-pages-working-js-8efc089201f401a58b1a.js.map"
+    ],
+    "path---tags-mircotasks": [
+      "path---tags-mircotasks-d5a9e61af5a3c3fa53ef.js",
+      "path---tags-mircotasks-d5a9e61af5a3c3fa53ef.js.map"
+    ],
+    "path---research-searchlens": [
+      "path---research-searchlens-ab432e661f1e7d1a4da1.js",
+      "path---research-searchlens-ab432e661f1e7d1a4da1.js.map"
+    ],
+    "path---tags-mobile-search": [
+      "path---tags-mobile-search-79a2b2c09806c54f6fde.js",
+      "path---tags-mobile-search-79a2b2c09806c54f6fde.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---undergrad-tensiflex": [
+      "path---undergrad-tensiflex-8a6f4b698e9db5ce5a6a.js",
+      "path---undergrad-tensiflex-8a6f4b698e9db5ce5a6a.js.map"
+    ],
+    "path---research-alloy": [
+      "path---research-alloy-f973ebc48693c3711af2.js",
+      "path---research-alloy-f973ebc48693c3711af2.js.map"
+    ],
+    "path---tags-information-retrieval": [
+      "path---tags-information-retrieval-efd46b545fe51af521eb.js",
+      "path---tags-information-retrieval-efd46b545fe51af521eb.js.map"
+    ],
+    "path---resume": [
+      "path---resume-a0e39f21c11f6a62c5ab.js",
+      "path---resume-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---tags-undergraduate": [
+      "path---tags-undergraduate-2763bd11e07089ad90fe.js",
+      "path---tags-undergraduate-2763bd11e07089ad90fe.js.map"
+    ],
+    "path---tags-sensemaking": [
+      "path---tags-sensemaking-e11ed2ead5604d26dbac.js",
+      "path---tags-sensemaking-e11ed2ead5604d26dbac.js.map"
+    ],
+    "path---tags-synthesis": [
+      "path---tags-synthesis-3001581b70f09e57c1ec.js",
+      "path---tags-synthesis-3001581b70f09e57c1ec.js.map"
+    ],
+    "app": [
+      "app-809567fac268492d366d.js",
+      "build-js-styles.css",
+      "app-809567fac268492d366d.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---undergrad-dancefest": [
+      "path---undergrad-dancefest-24b1d46c62ff4faff6fb.js",
+      "path---undergrad-dancefest-24b1d46c62ff4faff6fb.js.map"
+    ],
+    "path---tags-machine-learning": [
+      "path---tags-machine-learning-2eb4110af33df9ed97af.js",
+      "path---tags-machine-learning-2eb4110af33df9ed97af.js.map"
+    ],
+    "path---personal": [
+      "path---personal-a0e39f21c11f6a62c5ab.js",
+      "path---personal-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---undergrad-francis-bacon": [
+      "path---undergrad-francis-bacon-73095e7f2037e36a8629.js",
+      "path---undergrad-francis-bacon-73095e7f2037e36a8629.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---research-bento": [
+      "path---research-bento-8bbca828811eaff339f4.js",
+      "path---research-bento-8bbca828811eaff339f4.js.map"
+    ],
+    "path---undergrad": [
+      "path---undergrad-281a581fc6c096e5a676.js",
+      "path---undergrad-281a581fc6c096e5a676.js.map"
+    ],
+    "path---tags-software": [
+      "path---tags-software-f1bed1a3e575f28a26ca.js",
+      "path---tags-software-f1bed1a3e575f28a26ca.js.map"
+    ],
+    "path---research-tabhoarders": [
+      "path---research-tabhoarders-74b2aef0d5f8e4ea253f.js",
+      "path---research-tabhoarders-74b2aef0d5f8e4ea253f.js.map"
+    ],
+    "path---tags-workflow": [
+      "path---tags-workflow-924e55dda380b65a8789.js",
+      "path---tags-workflow-924e55dda380b65a8789.js.map"
+    ],
+    "path---tags-android": [
+      "path---tags-android-ac74beb5dabe567deddf.js",
+      "path---tags-android-ac74beb5dabe567deddf.js.map"
+    ],
+    "path---research-crowdlines": [
+      "path---research-crowdlines-91d73458d3961b0fb86e.js",
+      "path---research-crowdlines-91d73458d3961b0fb86e.js.map"
+    ],
+    "path---tags-is": [
+      "path---tags-is-98b23f424063dd8d4d79.js",
+      "path---tags-is-98b23f424063dd8d4d79.js.map"
+    ],
+    "path---tags-ml": [
+      "path---tags-ml-b7bd2ccbb3ed6b0f57b7.js",
+      "path---tags-ml-b7bd2ccbb3ed6b0f57b7.js.map"
+    ]
+  }
+}
