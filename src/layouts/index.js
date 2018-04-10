@@ -28,7 +28,7 @@ export default class Template extends React.Component {
     return (
       <div style={{backgroundColor: '#f3f3f3'}}>
         <Helmet
-          title="Nathan's Site"
+          title="Nathan Hahn"
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },

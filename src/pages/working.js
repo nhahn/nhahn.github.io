@@ -13,11 +13,11 @@ import TagColors from '../components/Tag_Colors'
 import 'antd/lib/grid/style/index.css';
 import 'antd/lib/tag/style/index.css';
 
-export default function Research({ data }) {
+export default function Working({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <div>
-      <Helmet title={`Research | Nathan Hahn`}/>
+      <Helmet title={`In Progress | Nathan Hahn`}/>
       <div>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
@@ -43,7 +43,9 @@ export default function Research({ data }) {
                       {post.frontmatter.summary}
                     </p>
                     <div style={{marginBottom: rhythm(1)}}>
-                      <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>{post.frontmatter.conference}</Tag>
+                      {post.frontmatter.conference && 
+                        <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>{post.frontmatter.conference}</Tag>
+                      }
                       {post.frontmatter.award && 
                         <Tag color="gold">{post.frontmatter.award}</Tag>}
                       {post.fields.docPath && 
@@ -60,13 +62,13 @@ export default function Research({ data }) {
 }
 
 export const pageQuery = graphql`
-  query ResearchQuery {
+  query WorkingQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date]}
       filter: {
         frontmatter: {
           working: {
-            ne: true
+            eq: true
           }
         }
         fields: {

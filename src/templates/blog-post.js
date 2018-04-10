@@ -23,7 +23,7 @@ export default function Template({ data, pathContext }) {
   
   return (
     <div className="blog-post-container">
-      <Helmet title={`Gatsby Blog - ${post.frontmatter.title}`}/>
+      <Helmet title={`${post.frontmatter.title} | Nathan Hahn`}/>
       <div className="blog-post">
         <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
         <h1 className="title">

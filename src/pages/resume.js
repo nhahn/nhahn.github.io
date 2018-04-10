@@ -27,6 +27,7 @@ export default function Resume({ data }) {
 
   return (
     <div>
+      <Helmet title={`Resume | Nathan Hahn`}/>
       <Row gutter={32}>
         <Col xl={24} style={{display: 'flex', justifyContent: 'center'}}>
           <div style={{maxWidth: 900, width: '100%'}}>
