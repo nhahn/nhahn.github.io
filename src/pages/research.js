@@ -39,6 +39,11 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date]}
       filter: {
+        frontmatter: {
+          working: {
+            ne: true
+          }
+        }
         fields: {
           category: {
             eq: "research"

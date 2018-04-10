@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    `gatsby-transformer-hjson`,
+    `gatsby-transformer-yaml`,
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -30,7 +39,9 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-autolink-headers',
-          "gatsby-remark-component"
+          "gatsby-remark-component",
+          "gatsby-remark-external-links",
+          `gatsby-remark-emoji`
         ]
       }
     },

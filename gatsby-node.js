@@ -3,6 +3,11 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const fsExtra = require('fs-extra');
 const fs = require('fs')
 
+exports.modifyBabelrc = ({ babelrc }) => ({
+  ...babelrc,
+  plugins: babelrc.plugins.concat(['transform-decorators-legacy', 'transform-class-properties']),
+})
+
 const createTagPages = (createPage, edges) => {
   const tagTemplate = path.resolve(`src/templates/tags.js`);
   const posts = {};

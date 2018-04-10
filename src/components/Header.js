@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import Link from "gatsby-link"
 import styled from 'styled-components'
 import {TweenMax} from "gsap";
-import { rhythm, options } from "../utils/typography" 
+import {rhythm, options} from "../utils/typography" 
+import {Affix} from 'antd'
+import autobind from 'autobind-decorator'
+
+import 'antd/lib/affix/style/index.css';
+
 
 const Background = styled.svg`
   width: 100%;
@@ -35,19 +40,39 @@ const NavLink = styled(Link)`
   display: inline-block;
   padding-right: ${rhythm(1/2)};
   box-shadow: none;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.59);
 `
 
 const HeaderContainer = styled.div`
-  padding: ${rhythm(4/3)};
+  padding: ${rhythm(1.5)} ${rhythm(4/3)};
   position: relative;
   text-shadow: 0 2px 6px rgba(0,0,0,0.59);
+  padding-bottom: ${rhythm(1/2)};
+`
+
+const NavLinks = styled.div`
+  padding: 1rem ${rhythm(4/3)};
+  position: relative;
+  text-shadow: ${props=> props.affixed? 'unset':'0 2px 6px rgba(0,0,0,0.59)'};
+  background-color: ${props=> props.affixed? '#555555':'unset'};
+  transition: all 0.3s ease-in;
+`
+
+const SubName = styled.h2`
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-right: ${rhythm(1.5)};
+  color: white;
+  background: linear-gradient(to right, #e3bc13, #00a78f, #12a3b4, #ff509e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 
 export default class Header extends React.Component {
   
   state = {
     current: 'home',
+    affixed: false
   }
 
   componentWillReceiveProps(nextProps) {
@@ -64,6 +89,11 @@ export default class Header extends React.Component {
   
   componentDidMount() {
     init(this.background);
+  }
+
+  @autobind
+  affixChange(val) {
+    this.setState({affixed: val});
   }
   
   render() {
@@ -98,13 +128,20 @@ export default class Header extends React.Component {
           </Link>  
         </Name>
         <h3 style={{color: 'white', marginTop: 0}}>Human Computer Interaction Institute | Carnegie Mellon University</h3>
-        <div style={{marginTop: rhythm(1)}}>
-          <NavLink to="/research">Research</NavLink>
-          <NavLink to="/bio">Bio</NavLink>
-          <NavLink to="/personal">Side Projects</NavLink>
-          <NavLink to="/undergrad">Undergrad</NavLink>
-        </div>
       </HeaderContainer>
+      <Affix onChange={this.affixChange}>
+        <NavLinks affixed={this.state.affixed}>
+          {this.state.affixed &&
+            <SubName>Nathan Hahn</SubName>
+          }
+          <h5 style={{display: 'inline-block', margin: 0}}>
+            <NavLink to="/research">Research</NavLink>
+            <NavLink to="/bio">Bio</NavLink>
+            <NavLink to="/personal">Side Projects</NavLink>
+            <NavLink to="/undergrad">Undergrad</NavLink>
+          </h5>
+        </NavLinks>
+      </Affix>
     </div>)
     
 //    return (        
