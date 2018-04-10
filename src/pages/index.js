@@ -2,19 +2,16 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import styled from 'styled-components'
-import {Row, Col} from 'antd'
+import {Row, Col, Tag} from 'antd'
 import {find} from 'lodash'
 import Img from "gatsby-image";
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
 import { rhythm, options } from "../utils/typography" 
+import TagColors from '../components/Tag_Colors'
 
 import 'antd/lib/grid/style/index.css';
-
-const Home = styled.div`
-  max-width: 1300px;
-  padding: 0px ${rhythm(1)};
-`
+import 'antd/lib/tag/style/index.css';
 
 //Things to put on here:
 //Bio (Research, Personal)
@@ -34,13 +31,13 @@ export default function Index({ data }) {
   const news = find(data.yaml.edges, (edge) => !!edge.node.news).node.news
 
   return (
-    <Home>
+    <div>
       <Row gutter={32}>
         <Col xl={18}>
           <h2>Bio</h2>
           <div>
             <p>
-              I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank">Niki Kittur</a>. My current research focuses on the topic of Sensemaking -- or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking -- such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build a number of interventions to assist users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing. 
+              I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build a number of interventions to assist users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing. 
             </p>
           </div>
           <h2>Selected Work</h2>
@@ -52,11 +49,12 @@ export default function Index({ data }) {
                   <div key={post.id}>
                     <Row gutter={32}>
                       <Col md={{span: 16, offset: 8}} sm={{span: 24}}>
-                        <h4 style={{margin: '0px 0px 10px 0px'}}>
+                        <h4 style={{margin: 0}}>
                           <Link to={post.fields.slug}>
                             {post.frontmatter.title}
                           </Link>
                         </h4>
+                        <h6 style={{margin: '0px 0px 10px 0px'}}>{post.frontmatter.authors.join(', ')}</h6>
                       </Col>
                     </Row>  
                     <Row gutter={32}>
@@ -64,9 +62,16 @@ export default function Index({ data }) {
                         <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
                       </Col>
                       <Col md={16}>
-                        <p>
+                        <p style={{margin: 0}}>
                           {post.frontmatter.summary}
                         </p>
+                        <div style={{marginBottom: rhythm(1)}}>
+                          <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>{post.frontmatter.conference}</Tag>
+                          {post.frontmatter.award && 
+                            <Tag color="gold">{post.frontmatter.award}</Tag>}
+                          {post.fields.docPath && 
+                           <a href={post.fields.docPath} target="_blank">PDF</a>}
+                        </div>
                       </Col>
                     </Row>              
                   </div>
@@ -95,7 +100,7 @@ export default function Index({ data }) {
           </Row>
         </Col>
       </Row>
-    </Home>
+    </div>
   );
 }
 
@@ -121,6 +126,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            docPath
           }
           id
           frontmatter {
@@ -128,6 +134,9 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             summary
             tags
+            authors
+            conference
+            award
           }
         }
       }

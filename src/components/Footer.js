@@ -6,8 +6,6 @@ import styled from 'styled-components'
 import {Row, Col, Icon} from 'antd'
 
 import 'antd/lib/grid/style/index.css';
-import 'antd/lib/style/core/iconfont.less'
-import 'antd/lib/style/themes/default.less'
 
 const Container = styled.div`
   background-color: #14545d;
@@ -38,6 +36,7 @@ const Footer = () => {
           <Text><a href="mailto:nhahn@cs.cmu.edu">nhahn@cs.cmu.edu</a></Text>
           <Header>Find Me On</Header>
           <span style={{fontSize: '1.5em'}}>
+            <a href="https://scholar.google.com/citations?user=DRg2HbgAAAAJ&hl=en&oi=sra" target="_blank" style={{paddingRight: 15, color:'white'}}><Icon type="google"/></a>
             <a href="https://github.com/nhahn" target="_blank" style={{paddingRight: 15, color:'white'}}><Icon type="github"/></a>
             <a href="https://www.linkedin.com/in/nphahn/" target="_blank" style={{color:'white'}}><Icon type="linkedin"/></a>
           </span>

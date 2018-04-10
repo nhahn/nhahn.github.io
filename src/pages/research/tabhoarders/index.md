@@ -1,14 +1,16 @@
 ---
 title: TabHoarders
+full_title: "When the Tab Comes Due: Challenges in the Cost Structure of Tab Usage"
 date:   2018-03-30 18:00:00
 summary: Tabs are a central tool in user's web browsing toolkit for managing both their inter and intra task activities. We explore how those tabs break down as they struggle to support too many activities, resulting in a set of cognitive "pressures" that can cause frustration, overload and even shame. 
 tags:
   - Sensemaking
   - Information Retrieval
 working: true
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Joseph Chang
+  - Nathan Hahn
+  - Niki Kittur
 ---
 
 ###Abstract

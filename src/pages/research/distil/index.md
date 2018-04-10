@@ -1,5 +1,6 @@
 ---
 title: Distil
+full_title: "Distil: Supporting Dynamic Sensemaking"
 date:   2018-04-05 18:00:00
 summary: Distil helps people capture and organize the information they collect from their online searches. It allows for multiple, flexible capture technique and an iterative development of an organization without all the manual work. It's currently built as a Chrome extension, and will eventually be integrated with Bento
 conference: UIST 2018 (in Submission)
@@ -10,11 +11,12 @@ tags:
   - Annotation
 working: true
 video: https://youtu.be/HF4MnMAzxxE
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Emily Su: esu@andrew.cmu.edu
-  - Ben Stein: bensstein@cmu.edu
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Nathan Hahn
+  - Joseph Chang
+  - Emily Su
+  - Ben Stein
+  - Niki Kittur
 ---
 
 ###Abstract

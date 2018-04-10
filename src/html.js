@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 const BUILD_TIME = new Date().getTime();
 
-import 'antd/lib/style/core/motion.less'
-import 'antd/lib/style/core/iconfont.less'
-
 export default class HTML extends React.Component {
   static propTypes = {
     body: PropTypes.string,

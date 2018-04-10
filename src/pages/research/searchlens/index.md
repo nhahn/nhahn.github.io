@@ -1,5 +1,6 @@
 ---
 title: SearchLens
+full_title: "SearchLens: Composing and Capturing Complex User Interests for Exploratory Search"
 date:   2018-04-02 18:00:00
 summary: SearchLens is a replacement search interface for exploratory searches, where users might have multiple categories or criteria they need to fulfil. By building up "lenses", users can easily structure what they want into a query, assign weights, and then see how results matched their preferences.  
 conference: UIST 2018 (in Submission)
@@ -7,10 +8,11 @@ tags:
   - Sensemaking
   - Information Retrieval
 working: true
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Adam Peerer: adam.perer@gmail.com
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Joseph Chang
+  - Nathan Hahn
+  - Adam Peerer
+  - Niki Kittur
 ---
 
 ###Abstract

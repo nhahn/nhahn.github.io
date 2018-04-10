@@ -1,5 +1,6 @@
 ---
 title: Casual Microtasking
+full_title: "Casual Microtasking: Embedding Microtasks in Facebook"
 date:   2018-03-31 18:00:00
 summary: We've been working on the concept of "casual microtasking", or giving people small tasks to work on while they're doing other activities. In this paper, we explored this with Facebook -- we inserted small writing tasks into users' Facebook news feed, and gathered some responses about their experience with it. 
 conference: UIST 2018 (in Submission)
@@ -7,9 +8,10 @@ tags:
   - Mircotasks
   - Selfsourcing
 working: true
-collaborators:
-  - Shamsi Iqbal: shamsi@microsoft.com
-  - Jaime Teevan: teevan@microsoft.com
+authors:
+  - Nathan Hahn
+  - Shamsi Iqbal
+  - Jaime Teevan
 ---
 
 ###Abstract

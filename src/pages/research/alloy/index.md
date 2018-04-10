@@ -1,5 +1,6 @@
 ---
 title: Alloy
+full_title: "Alloy: Clustering with Crowds and Computation"
 date:   2016-02-30 16:29:56
 summary: Many crowd clustering approaches have difficulties providing global context to workers in order to generate meaningful categories. Alloy uses a sample-and-search technique to provide global context, and combines the deep semantic knowledge from human computation and the scalability of machine learning models to create rich structures from unorganized documents with high quality and efficiency
 selected: true
@@ -8,9 +9,10 @@ award: Honorable Mention
 tags:
   - Crowdsourcing
   - Machine Learning
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Joseph Chang
+  - Nathan Hahn
+  - Niki Kittur
 ---
 
 ###Abstract

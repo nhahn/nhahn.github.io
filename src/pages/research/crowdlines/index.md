@@ -1,5 +1,6 @@
 ---
 title: Crowdlines
+full_title: "Crowdlines: Supporting Synthesis of Diverse Information Sources through Crowdsourced Outlines"
 date:   2015-07-28 15:00:00
 summary: Learning new topics online can often be difficult -- even though their might be a wealth of information, it's often structured differently and the terminology used can be different. We utilized crowdworkers to synthesize this diverse information into a cohesive outline that retains the diversity of the original sources, but has a consistent structure. 
 conference: HCOMP 2015
@@ -7,10 +8,11 @@ tags:
   - Crowdsourcing
   - Categorization
   - Workflow
-collaborators:
-  - Kurt Luther: kluther@vt.edu
-  - Steven Dow: 
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Kurt Luther
+  - Nathan Hahn
+  - Steven Dow
+  - Niki Kittur
 ---
 
 ###Abstract

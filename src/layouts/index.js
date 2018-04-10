@@ -5,6 +5,17 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { rhythm, options } from "../utils/typography" 
+import styled from 'styled-components'
+
+import 'antd/lib/style/core/motion.less'
+import 'antd/lib/style/core/iconfont.less'
+import 'antd/lib/style/themes/default.less'
+
+const Body = styled.div`
+  max-width: 1300px;
+  margin: ${rhythm(1/2)} auto;
+  padding: 0px ${rhythm(1)};
+`
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -24,14 +35,9 @@ export default class Template extends React.Component {
           ]}
         />
         <Header location={location}/>
-        <div
-          style={{
-            margin: `${rhythm(1/2)} auto`,
-            padding: `0px ${rhythm(1)}`
-          }}
-        >
+        <Body>
           {this.props.children()}
-        </div>
+        </Body>
         <Footer />
       </div>
     );

@@ -6,6 +6,7 @@ import {TweenMax} from "gsap";
 import {rhythm, options} from "../utils/typography" 
 import {Affix} from 'antd'
 import autobind from 'autobind-decorator'
+import Media from "react-media";
 
 import 'antd/lib/affix/style/index.css';
 
@@ -127,19 +128,27 @@ export default class Header extends React.Component {
           Nathan Hahn
           </Link>  
         </Name>
-        <h3 style={{color: 'white', marginTop: 0}}>Human Computer Interaction Institute | Carnegie Mellon University</h3>
+        <Media query="(max-width: 599px)">
+        {matches =>
+          matches ? (
+            <h2 style={{color: 'white', marginTop: 0}}>HCII | CMU</h2>
+          ) : (
+            <h2 style={{color: 'white', marginTop: 0}}>Human Computer Interaction Institute | Carnegie Mellon University</h2>
+          )
+        }
+        </Media>
       </HeaderContainer>
       <Affix onChange={this.affixChange}>
         <NavLinks affixed={this.state.affixed}>
           {this.state.affixed &&
             <SubName>Nathan Hahn</SubName>
           }
-          <h5 style={{display: 'inline-block', margin: 0}}>
+          <h4 style={{display: 'inline-block', margin: 0}}>
             <NavLink to="/research">Research</NavLink>
-            <NavLink to="/bio">Bio</NavLink>
-            <NavLink to="/personal">Side Projects</NavLink>
+            <NavLink to="/resume">Resume / CV</NavLink>
             <NavLink to="/undergrad">Undergrad</NavLink>
-          </h5>
+            <NavLink to="/personal">Side Projects</NavLink>
+          </h4>
         </NavLinks>
       </Affix>
     </div>)

@@ -1,5 +1,6 @@
 ---
 title: Knowledge Accelerator (KA)  
+full_title: "The Knowledge Accelerator: Big Picture Thinking in Small Pieces"
 date:   2015-12-30 16:29:56
 summary: The Knowledge Accelerator (KA) uses crowdworkers to synthesize different information sources on the web in response to a query. We prototyped this system in order to explore crowdsourcing complex, high context tasks in a microtask enviornment. Our system performed quite well, checkout the answers it produced! 
 selected: true
@@ -9,10 +10,11 @@ tags:
   - Crowdsourcing
   - Sensemaking
   - Ruby on Rails
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Ji Eun Kim: JiEun.Kim@us.bosch.com
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Nathan Hahn
+  - Joseph Chang
+  - Ji Eun Kim
+  - Niki Kittur
 ---
 
 ###Abstract

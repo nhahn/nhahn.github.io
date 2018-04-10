@@ -1,5 +1,6 @@
 ---
 title: SearchScape
+full_title: "SearchScape: From Ranked Lists to Interactive Landscapes"
 date:   2018-04-01 18:00:00
 summary: We've been working on the concept of "casual microtasking", or giving people small tasks to work on while they're doing other activities. In this paper, we explored this with Facebook -- we inserted small writing tasks into users' Facebook news feed, and gathered some responses about their experience with it. 
 tags:
@@ -7,9 +8,10 @@ tags:
   - Information Retrieval
   - Machine Learning
 working: true
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Joseph Chang
+  - Nathan Hahn
+  - Niki Kittur
 ---
 
 ###Abstract

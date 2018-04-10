@@ -1,5 +1,6 @@
 ---
 title: Intentionally Uncertain Input
+full_title: Supporting Mobile Sensemaking Through Intentionally Uncertain Highlighting
 date: 2016-04-03 18:00:00
 summary: Highlighting can be mentally taxing for learners who are often unsure about how much information they needed to include. We introduce the idea of intentionally uncertain input in the context of highlighting on mobile devices. We present a system that uses force touch and fuzzy bounding boxes to support saving information while users are uncertain about where to highlight.
 conference: UIST 2016
@@ -8,9 +9,10 @@ tags:
   - iOS
   - Interaction Techniques
   - Annotation
-collaborators:
-  - Joseph Chang: josephcc@cmu.edu 
-  - Niki Kittur: nkittur@cs.cmu.edu
+authors:
+  - Joseph Chang
+  - Nathan Hahn
+  - Niki Kittur
 ---
 
 ###Abstract

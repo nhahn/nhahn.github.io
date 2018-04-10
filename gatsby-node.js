@@ -127,7 +127,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       let fullPath = path.join(value, file),
           extension = path.extname(file);
       if (extension == '.pdf')
-        doc = file;
+        doc = fullPath;
       if (extension == '.png' || extension == '.jpg' || extension == '.jpeg')
         img = file;
     })
