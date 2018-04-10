@@ -6,6 +6,7 @@ module.exports = {
     author: 'Nathan Hahn',
     title: `Nathan's Personal Website`,
     description: `The personal website of PhD student Nathan Hahn`
+    
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -54,7 +55,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-feed`,
+   // `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,

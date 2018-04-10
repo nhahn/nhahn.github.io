@@ -45,6 +45,7 @@
     "react-icons": "~2.2.5",
     "react-media": "^1.8.0",
     "rehype-react": "^3.0.2",
+    "request-promise-native": "^1.0.5",
     "styled-components": "^2.4.0",
     "typography-theme-lincoln": "^0.15.11",
     "typography-theme-wordpress-2016": "^0.15.10"
@@ -61,7 +62,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths",
-    "postdeploy": "gh-pages -d public",
+    "postdeploy": "gh-pages -b master -d public",
     "develop": "gatsby develop",
     "preserve": "npm run build",
     "serve": "gatsby serve",

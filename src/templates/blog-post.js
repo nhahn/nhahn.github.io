@@ -25,7 +25,7 @@ export default function Template({ data, pathContext }) {
     <div className="blog-post-container">
       <Helmet title={`${post.frontmatter.title} | Nathan Hahn`}/>
       <div className="blog-post">
-        <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
+        {post.fields.imgPath && <Img sizes={post.fields.imgPath.childImageSharp.sizes} />}
         <h1 className="title">
           {post.frontmatter.title}
         </h1>
