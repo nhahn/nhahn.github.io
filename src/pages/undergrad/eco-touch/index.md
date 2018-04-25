@@ -18,38 +18,23 @@ collaborators:
   - Emily Tsai: cetsai@andrew.cmu.edu
 ---
 
-
-<div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-        <dd data-magellan-arrival="background"><a href="#background">Background</a></dd>
-        <dd data-magellan-arrival="research"><a href="#research">Research</a></dd>
-        <dd data-magellan-arrival="ideas"><a href="#ideas">Ideation</a></dd>   
-        <dd data-magellan-arrival="product"><a href="#product">Product</a></dd>  
-        <dd data-magellan-arrival="presentation"><a href="#presentation">Presentation</a></dd>
-    </dl>
-</div>
-<a name="background"></a>
-<h3 data-magellan-destination="background">Background</h3>
+### Background
 
 The Stony Brook Millstone Watershed Association is constructing a new environmental center, which will integrate an array of sustainability features as part of its pursuit of LEED Platinum status, with net-zero energy consumption. For more than 60 years the organization has worked to protect central New Jersey’s water and environment through conservation, advocacy, science, and education. The new center will incorporate exhibits, classrooms, and a laboratory that focus on helping people to understand environmental issues and take the proper steps for a better future. The center’s many green systems, which include geothermal hvac, diurnal ducting, wetlands-based wastewater treatment, a green roof,
 solar arrays, and more, will all serve to reduce the impact the center has on the environment. However, to fully achieve their mission statement, the association seeks to install an interactive exhibit that draws on data and educates visitors on sustainable building practices.
 
 Our goal for this project is to design an exhibit that can appeal to children, homeowners, contractors/building officials, and policy makers to enhance their understanding of human systems and encourage environmental sustainability in specific real-world contexts.
 
-<a name="research"></a>
-<h3 data-magellan-destination="research">Research</h3>
+### Research
 
 In order to gain a basic understanding of how individual interact with museum exhibits, we spent several hours in a few museums noting the interactions and movements of individuals. We spent approximately 30 minutes in each of the exhibit spaces recording notable interactions and break-downs that users had with each particular exhibit. In order to capture the largest number of interactions, we split up into two teams and rotated between the different museums.
 
 From this research, we discovered numerous factors that influence a visitor’s museum journey from start to finish. The critical points to consider in this journey are the surprise or the event trigger, the interaction and knowledge acquired from such interaction and finally the transfer of such knowledge beyond the exhibit tour. In order to achieve this, we should create a novel and/or well- guided experience, facilitate collaboration between visitors, cater to the physical constraints of a visitor, understand what is important or unimportant to the visitor and last but not least provide a memorable experience that one can apply in context of the real world.
-<br/>
-<br/>
 
-<img class="th" src="./images/ecotouch/museum_model.png">
+![Model of Museum](images/museum_model.png)
 Our model that we used to explain an individual's exhibit experience.
 
-<a name="ideas"></a>
-<h3 data-magellan-destination="ideas">Ideation</h3>
+### Ideation
 
 We began brainstorming with an independent idea generation process. We sat in a room and, working alone, came up with as many exhibit ideas as possible in 15 minutes. There were no restrictions on scope, cost, or absurdity. At the conclusion of our time, we had a total of 40 concepts ranging from the very practical informational wall display to the slightly-less-conventional sculpture to simulate the water process through the movement of metal balls. 
 
@@ -59,18 +44,17 @@ Regarding gameplay, we wanted to give users tasks that would challenge them to l
 
 <div class="row">
     <div class="medium-4 columns">
-        <img class="th" src="./images/ecotouch/tabletop_idea.png">
+        <img class="th" src="./images/tabletop_idea.png">
     </div>
     <div class="medium-4 columns">
-        <img class="th" src="./images/ecotouch/energy_flow_idea.png">
+        <img class="th" src="./images/energy_flow_idea.png">
     </div>
     <div class="medium-4 columns">
-        <img class="th" src="./images/ecotouch/augmented_reality_idea.png">
+        <img class="th" src="./images/augmented_reality_idea.png">
     </div>
 </div>
 Some concepts from ideation.
 
-<a name="product"></a>
 <h3 data-magellan-destination="product">Product</h3>
 
 
@@ -79,13 +63,13 @@ Some concepts from ideation.
         <p>The concept for the game is to have players build their own environmentally sustainable building while learning about the various features that go into it. Players can choose from a number of different features, such as solar panels, geothermal heating and cooling, and rain barrels, which can be incorporated into their building. The game also allows for players to change the size of their building and the environmental region it is located in. All of these variables impact the overall energy consumption and savings of a player’s building, so players are challenged to make informed decisions about the features they add. Furthermore, players are restricted by a budget that reflects real world costs, giving players incentive to weigh the up-front costs against long term benefits. At the end of the game, players are presented with a graph of their building’s projected energy consumption.</p>
     </div>
     <div class="medium-6 columns">
-        <img class="th" src="./images/ecotouch/info_screen.png"/>
+        <img class="th" src="./images/info_screen.png"/>
         <p>System Information</p>
     </div>
 </div>
 <div class="row">
     <div class="medium-6 columns">
-        <img class="th" src="./images/ecotouch/preference_screen.png"/>
+        <img class="th" src="./images/preference_screen.png"/>
         <p>User Preferences</p>
     </div>
     <div class="medium-6 columns">
@@ -99,13 +83,11 @@ Some concepts from ideation.
         <p>In the following section, we revisit each iteration of the prototype and explain the process as we improve on and test with each version, from start to finish.</p>
     </div>
     <div class="medium-6 columns">
-        <img class="th" src="./images/ecotouch/round_screen.png"/>
+        <img class="th" src="./images/round_screen.png"/>
         <p>Round Ending Screen</p>
     </div>
 </div>
 
-
-<a name="presentation"></a>
-<h3 data-magellan-destination="presentation">Presentation</h3>
+### Presentation
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/34585436" width="100%" height="700" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import {Row, Col, Tag} from 'antd'
 import {find} from 'lodash'
 import Img from "gatsby-image";
+import moment from 'moment';
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
 import { rhythm, options } from "../utils/typography" 
@@ -24,6 +25,51 @@ import 'antd/lib/tag/style/index.css';
 //News
 
 //Resume Link?
+
+const Time = styled.time`
+  font-size: 0.5em; /* change icon size */
+  display: inline-block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  margin-right: 10px;
+  overflow: hidden;
+  
+  * {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+  }
+
+  strong {
+    position: absolute;
+    top: 0;
+    padding: 0.4em 0;
+    color: #fff;
+    background-color: #fd9f1b;
+    border-bottom: 1px dashed #f37302;
+    box-shadow: 0 2px 0 #fd9f1b;
+  }
+
+  em {
+    position: absolute;
+    bottom: 0.3em;
+    color: #fd9f1b;
+  }
+
+  span {
+    font-size: 2.8em;
+    letter-spacing: -0.05em;
+    padding-top: 0.8em;
+    color: #2f2f2f;
+  }
+`;
 
 export default function Index({ data }) {
   const { edges: posts } = data.markdown;
@@ -82,18 +128,26 @@ export default function Index({ data }) {
         <Col xl={6}>
           <Row>
             <Col sm={24} md={12} lg={12} xl={24}>
-              <h4>Recent Activities</h4>
+              <h3>Recent Activities</h3>
               {events.map((event, idx) => {
-                return (<div key={idx}>
-                  <b>{event.name}</b>
+                let date = moment(event.date_start);
+                
+                return (<div key={idx} style={{display: 'flex', marginBottom: 10, alignItems: 'center'}}>
+                  <Time datetime={event.date_start} class="icon">
+                    <em>{date.format('YYYY')}</em>
+                    <strong>{date.format('MMMM')}</strong>
+                    <span>{date.format('D')}</span>
+                  </Time>
+                  <h4 style={{margin: 0}}>{event.name}</h4>
                 </div>)
               })}
             </Col>
             <Col sm={24} md={12} lg={12} xl={24}>
-              <h4>Recent Press</h4>
+              <h3>Recent Press</h3>
               {news.map((article, idx) => {
                 return (<div key={idx}>
-                  <b>{article.title}</b>
+                  <h4 style={{marginBottom: 0}}><a target="_blank" href={article.url}>{article.title}</a></h4>
+                  <em>{article.venue} &mdash; {moment(article.date).format('MMM YY\'')}</em>
                 </div>)
               })}
             </Col>

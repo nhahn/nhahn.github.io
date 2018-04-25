@@ -17,17 +17,7 @@ collaborators:
 ---
 
 
-<div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-        <dd data-magellan-arrival="ci"><a href="#ci">Contexual Interviews</a></dd>
-        <dd data-magellan-arrival="diagram"><a href="#diagram">Diagraming</a></dd>
-        <dd data-magellan-arrival="visioning"><a href="#visioning">Visioning</a></dd>
-        <dd data-magellan-arrival="idea"><a href="#idea">Final Idea</a></dd>
-    </dl>
-</div>
-
-<a name="ci"></a>
-<h3 data-magellan-destination="ci">Contextual Interviews</h3>
+### Contextual Interviews
 
 Each person in our group performed a contextual interview with a another student in the class. Each interview lasted approximately an hour. Each student was asked to work on and complete an assignment while we watched them perform their work. We collected information, keeping the general scope in mind: How do students complete their assignments? 
 
@@ -36,29 +26,24 @@ For my interview, I observed a student complete a programming assignment. While 
 - He really like having videos for parts of the assignment. When he was setting up his enviornment, there were complicated instructions that he needed step-by-step instructions for.
 - He used a specific problem-solving technique/
 
-<a name="diagram"></a>
-<h3 data-magellan-destination="diagram">Diagraming</h3>
 
-<a name="visioning"></a>
-<h3 data-magellan-destination="visioning">Visioning</h3>
+### Diagraming
 
-<a name="idea"></a>
-<h3 data-magellan-destination="idea">Final Idea</h3>
+
+### Visioning
+
+
+### Final Idea
 
 Finally, we settled a solution dubbed (Re)Iterate. Iteration is the core of students’ work, but keeping track of it is not as easy as it should be. This solution attempted to improve this experience and process. This system tracks students’ experimentation process, allowing them to focus on more creative pursuits. Additionally, it provides clearer documentation of the iterative process to help students and evaluators.
 
 The product will track substantive changes that students make during their iterative process, such that they can review and combine versions in novel ways. It can be used across disciplines. Additionally, it allows you to export your Action History for viewing by others and critique. 
 
 For example, in this storyboard, a student wants to go back to see something they liked in their previous iteration:
-<div class="row">
-    <img class="th" src="./images/ucre/storyboard_1.png">
-</div>
+![Storyboard 1](images/storyboard_1.png)
 
 These next two storyboards detail the interaction a student might have with their professor:
 
-<div class="row">
-    <img class="th" src="./images/ucre/storyboard_2.png">
-</div>
-<div class="row">
-    <img class="th" src="./images/ucre/storyboard_3.png">
-</div>
+![Storyboard 2](images/storyboard_2.png)
+
+![Storyboard 3](images/storyboard_3.png)

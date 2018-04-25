@@ -5,11 +5,17 @@ import ForwardIcon from 'react-icons/lib/fa/chevron-right';
 import rehypeReact from "rehype-react"
 import Img from "gatsby-image";
 import styled from 'styled-components'
+import {Row, Col, Button, Tag} from 'antd'
+import TagColors from '../components/Tag_Colors'
 
 import Link from '../components/Link';
 import Tags from '../components/Tags';
 
 import '../css/blog-post.css';
+
+import 'antd/lib/grid/style/index.css';
+import 'antd/lib/tag/style/index.css';
+import 'antd/lib/button/style/index.css';
 
 const Citation = styled.pre`
   tab-size: 4;
@@ -36,18 +42,32 @@ export default function Template({ data, pathContext }) {
     <div className="blog-post-container">
       <Helmet title={`${post.frontmatter.title} | Nathan Hahn`}/>
       <div className="blog-post">
-        {post.fields.imgPath && <Img sizes={post.fields.imgPath.childImageSharp.sizes} />}
-        <h1 className="title">
-          {post.frontmatter.title}
-        </h1>
-        <h2 className="date">
-          {post.frontmatter.date}
-        </h2>
+        <Row gutter={16}>
+          <Col sm={24} md={12}>
+            <h1>
+              {post.frontmatter.full_title || post.frontmatter.title}
+            </h1>
+            <h3>
+              {post.frontmatter.authors && post.frontmatter.authors.join(', ')}
+            </h3>
+            <div style={{paddingBottom: 10}}>
+              {post.frontmatter.conference && <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>  {post.frontmatter.conference}
+              </Tag>}
+              {post.frontmatter.award && 
+                <Tag color="gold">{post.frontmatter.award}</Tag>}
+              {post.fields.docPath && 
+               <a href={post.fields.docPath} target="_blank">PDF</a>}
+            </div>
+          </Col>
+          <Col sm={24} md={12}>
+            {post.fields.imgPath && <Img sizes={post.fields.imgPath.childImageSharp.sizes} />}
+          </Col>
+        </Row>
         <div className="blog-post-content">
           {renderAst(post.htmlAst)}
         </div>
         {bibtex && 
-          <div>
+          <div >
             <h4>Citation</h4>
             <Citation>{citation}</Citation>
             <h4>Bibtex</h4>
@@ -55,6 +75,13 @@ export default function Template({ data, pathContext }) {
           </div>
         }
         <Tags list={post.frontmatter.tags || []} />
+      </div>
+    </div>
+  );
+}
+
+/** Navigation links between pages
+
         <div className="navigation">
           {prev &&
             <Link className="link prev" to={prev.fields.slug}>
@@ -65,10 +92,8 @@ export default function Template({ data, pathContext }) {
               {next.frontmatter.title} <ForwardIcon />
             </Link>}
         </div>
-      </div>
-    </div>
-  );
-}
+
+**/
 
 export const pageQuery = graphql`
   query BlogPostByPath($slug: String!) {
@@ -78,9 +103,15 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         tags
         title
+        full_title
+        authors
+        video
+        award
+        conference
       }
       fields {
         slug
+        docPath
         imgPath {
           childImageSharp {
             sizes(maxWidth: 800) {

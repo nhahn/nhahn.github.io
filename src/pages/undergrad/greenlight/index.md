@@ -15,17 +15,6 @@ collaborators:
   - Dillon Grove: dillongrove@gmail.com
   - Jonathan Miller: jmill1030@gmail.com
 ---
-
-<div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-        <dd data-magellan-arrival="intro"><a href="#intro">Introduction</a></dd>
-        <dd data-magellan-arrival="hardware"><a href="#hardware">Hardware</a></dd>
-        <dd data-magellan-arrival="dashboard"><a href="#dashboard">Dashboard</a></dd>
-        <dd data-magellan-arrival="back"><a href="#back">Backend</a></dd>
-        <dd data-magellan-arrival="discuss"><a href="#discuss">Value Calculations</a></dd>
-    </dl>
-</div>
-
  
 <a name="intro"></a>
 <h3 data-magellan-destination="intro">Introduction</h3>
@@ -33,14 +22,14 @@ collaborators:
 The use of natural light in commercial settings is undervalued. Most large industrial parks and university campuses rely solely on artificial sources to provide light for their rooms. Artificial light at these locations is often emitted in excess of what is necessary in an indoor space. This excess represents an entirely preventable waste of energy. Windows in these rooms offer an abundance of natural light during the day and this can help brighten a room. However, the artificial lights are usually on at full power whether the sun is shining bright or hiding behind the clouds. 
 
 <ul class="small-block-grid-3">
-    <li><img class="th" src="./images/greenlight/intro_1.png"></li>
-    <li><img class="th" src="./images/greenlight/intro_2.png"></li>
-    <li><img class="th" src="./images/greenlight/intro_3.png"></li>
+    <li><img class="th" src="./images/intro_1.png"></li>
+    <li><img class="th" src="./images/intro_2.png"></li>
+    <li><img class="th" src="./images/intro_3.png"></li>
 </ul>
 
 <div class="row">
     <div class="medium-8 columns">
-        <img class="th" src="./images/greenlight/greenlight_intro.jpg">
+        <img class="th" src="./images/greenlight_intro.jpg">
     </div>
     <div class="medium-4 columns">
     <p>Our group has set out to solve this problem by developing an information system that automates artificial light sources to enhance comfort and reduce energy consumption. This system will dim the artificial lights when the sunlight entering the room is brighter. As the sunlight in the room decreases, the artificial lights in the room will brighten, compensating for this loss of natural light. This system can save energy due to the decrease in artificial light when sunlight is present. </p>
@@ -61,23 +50,23 @@ The dimmer is responsible for controlling the amount of electricity that is sent
 The Electric Imp is a Wi-Fi chip that is connected to both the light sensor and the dimmer. The Imp connected to the light sensor is responsible for transferring the natural light reading to the server over the Wi-Fi network. The Imp connected to the dimmer is responsible for receiving the reading from the server that tells the dimmer how much it should alter the electricity transfer to the lights. In addition, this Imp responds to the server with the amount of energy transferred to the lights through the dimmer so that this reading can be depicted in the web interface.
 
 <ul class="small-block-grid-3">
-    <li><img class="th" src="./images/greenlight/dimmer_v1_2.jpg"></li>
-    <li><img class="th" src="./images/greenlight/dimmer_v2_layout.png"></li>
-    <li><img class="th" src="./images/greenlight/dimmer_v2_picture.jpg"></li>
+    <li><img class="th" src="./images/dimmer_v1_2.jpg"></li>
+    <li><img class="th" src="./images/dimmer_v2_layout.png"></li>
+    <li><img class="th" src="./images/dimmer_v2_picture.jpg"></li>
 </ul>
 
 <a name="dashboard"></a>
 <h3 data-magellan-destination="dashboard">Dashboard</h3>
 
 <ul class="small-block-grid-2">
-    <li><img class="th" src="./images/greenlight/dash_v1.png"></li>
-    <li><img class="th" src="./images/greenlight/dash_v2.png"></li>
+    <li><img class="th" src="./images/dash_v1.png"></li>
+    <li><img class="th" src="./images/dash_v2.png"></li>
 </ul>
 
 <a name="back"></a>
 <h3 data-magellan-destination="back">Backend</h3>
 
-<img class="th" src="./images/greenlight/sensor_reading_workflow.jpg">
+<img class="th" src="./images/sensor_reading_workflow.jpg">
 
 The above workflow is how the Greenlight system works from the sensor, bot the backend server, and back out to the dimmer. 
 
@@ -87,7 +76,7 @@ The image to the right details how our backend server is configured and deployed
     </p>
     </div>
     <div class="medium-8 columns">
-        <img class="th" src="./images/greenlight/server_setup.png">
+        <img class="th" src="./images/server_setup.png">
     </div>
 </div>
 

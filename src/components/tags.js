@@ -1,18 +1,20 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import {Tag} from 'antd'
 
-import '../css/tags.css';
+import 'antd/lib/tag/style/index.css';
 
 export default function Tags({ list = [] }) {
   return (
-    <ul className="tag-list">
+    <div>
+      Tags:&nbsp;
       {list.map(tag =>
-        <li key={tag}>
+        <Tag key={tag} color="cyan">
           <Link to={`/tags/${tag}`}>
             {tag}
           </Link>
-        </li>
+        </Tag>
       )}
-    </ul>
+    </div>
   );
 }

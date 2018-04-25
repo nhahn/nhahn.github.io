@@ -11,27 +11,16 @@ tags:
 code: https://github.com/nhahn/GreenLight_Android
 ---
 
-
-<div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-        <dd data-magellan-arrival="background"><a href="#background">Overview</a></dd>
-        <dd data-magellan-arrival="architecture"><a href="#architecture">Architecture</a></dd>
-        <dd data-magellan-arrival="bluetooth"><a href="#bluetooth">Proximity Sensor</a></dd>
-    </dl>
-</div>
-
-
-<a name="background"></a>
-<h3 data-magellan-destination="background">Overview</h3>
+### Overview
 
 [Greenlight][3] is a daylight harvesting system my Information Systems team created (you can read more about it by following the link). The Android application I created is an extension of this -- it allows you to view any information you normally see through the web application on your phone. It does this by connecting to our Ruby on Rails server through an API I created to pair with the Android application. After using a token for authentication, users can view information about a room, including power consumption and sensor graphs, as well as control the room's lights. As an extra feature, the application can detect with a user is in a room by using a Bluetooth LE beacon. 
 
-<img class="th" src="./images/greenlight_mobile/Greenlight_Mobile.002.png">
+<img class="th" src="./images/Greenlight_Mobile.002.png">
 
-<a name="architecture"></a>
-<h3 data-magellan-destination="architecture">Architecture</h3>
 
-<img class="th" src="./images/greenlight_mobile/Greenlight_Mobile.004.png">
+### Architecture
+
+<img class="th" src="./images/Greenlight_Mobile.004.png">
 
 The app utilizes two core components of the Android framework to manage its connection to the Ruby on Rails application. For authentication, Android's AbstactAccountAuthenticator class was implemented to allow for a more structured authentication process. This allows a user's
 [Greenlight][3] account to appear in the general settings screen, and allow for background Bluetooth scanning preferences to be adjusted. 
@@ -42,10 +31,10 @@ For actually transmitting and receiving data, a custom content provider and curs
 
 Additionally the content provider allows you to follow rails associations, so most of the requeries are done for you. 
 
-<a name="bluetooth"></a>
-<h3 data-magellan-destination="bluetooth">Proximity Sensor</h3>
 
-<img class="th" src="./images/greenlight_mobile/Greenlight_Mobile.005.png">
+### Proximity Sensor
+
+<img class="th" src="./images/Greenlight_Mobile.005.png">
 
 The proximity detection portion of the application was created using a Bluetooth LE beacon. I used the [ReadBearLabs BLE Mini][1] and flashed a custom firmware image onto it. The firmware image implemented the Apple iBeacon protocol. This has 4 parts to it: 
 

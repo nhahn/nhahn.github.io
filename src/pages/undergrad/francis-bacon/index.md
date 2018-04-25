@@ -14,20 +14,8 @@ collaborators:
   - Colleen Eagan: colleagan@gmail.com
 ---
 
-<div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-        <dd data-magellan-arrival="intro"><a href="#intro">Introduction</a></dd>
-        <dd data-magellan-arrival="related"><a href="#related">Related Work</a></dd>
-        <dd data-magellan-arrival="method"><a href="#method">Methodology</a></dd>
-        <dd data-magellan-arrival="results"><a href="#results">Results</a></dd>
-        <dd data-magellan-arrival="discuss"><a href="#discuss">Discussion</a></dd>
 
-    </dl>
-</div>
-
-
-<a name="intro"></a>
-<h3 data-magellan-destination="intro">Introduction</h3>
+### Introduction
 
 
 Karl Marx’s “The Communist Manifesto”, published in 1848, is often cited as one of the most influential pieces of political literature to be written in the past couple of centuries.  An analytical commentary on the problems inherent in social structures, with particular emphasis placed on capitalism, the manifesto was commissioned by the Communist Party and serves as the basis for the communist movement that grew out of the nineteenth century.  What followed was an ideological split between followers and proponents of individualistic social structure (capitalism) and more community-oriented social structures, like those proposed in communism.  
@@ -38,16 +26,16 @@ We expected to see several trends in the data that we analyzed.  As the ideologi
 
 Our project was two-pronged in nature, with a digital component and a humanistic analysis.  As outlined below, we needed to construct a digital tool capable of clustering the data that was of interest.  The tool produced a computational analysis of our primary source of data, the google Ngram corpus.  The tool returned data on the frequency of words used over our time period, 1840-1860, and clusters words that have similar usage frequency.  This data was then looked at through a humanistic lens, where we provided sociocultural explanations for the data and explored the limitations and biases of our project.
 
-<a name="related"></a>
-<h3 data-magellan-destination="related">Related Work</h3>
+
+### Related Work
 
 In 2012, Jean Twenge, M. Keith Campbell, and Brittany Gentile published an article that included two studies they conducted on the usage of individualistic and communal terms.  Their studies focused on a perceived increase in use of individual-centric words and phrases between 1960 and 2008.  Like the analysis presented below, they are interested in examining the influence culture has on language.  They use a large corpus of book data that has been digitized as their primary source. They eventually conclude that the increase in individualistic words and phrases demonstrates a cultural shift toward American individualism in the second half of the twentieth century.  This article, and Twenge et al.’s work have been criticized for failing to account for specific events that happen within the time period that might alter language change.  Our project, in comparison, centers around a particular event in history, looking for language change that may be related to that event.
 In our research, we turned to a fair amount of existing work that investigates the relationship of language to Marxism. In many of the studies we came across, social class became the primary concern, with a focus on the veiling effect of specific language. This is related to the expression of distinct ideas by a certain social class within a larger national language. An example is Valentinin Voloshiov’s “Marxism and the Philosophy of Language”, which deals with how ideologies shape language. Another reference point is “Marxist Linguistic Theory and Communist Practice: A Sociolinguistic Study” by Max K. Adler, in which language is thought of as a product of society, and society as a product of language. If this is indeed the case, we would expect to see such forces at work within our Ngram data.
 
 Another way that our research is distinct from existing work, is that we seek to quantify the changes that occur within language and ideologies after the publication of “The Communist Manifesto”. By tracking the rise or decline in particular language, we expect to make visible the linguistic trends that may coincide with historical events.
 
-<a name="method"></a>
-<h3 data-magellan-destination="method">Methodology</h3>
+
+### Methodology
 
 Do to computational limitations, the tool was designed to output data relating to the top 25,000 most frequently used 1-grams in the general English corpus from 1840-1860. To do this, we filtered through the time-series information for all of the 1-grams in the corpus and sorted them by their maximum volume count. Therefore, a word was considered to be in the top 25,000 only if it was featured in a variety of writings. Unfortunately, we were unable to normalize words based on their relative frequency, due to the floating point limitation of the double data type e.g. the numbers were too small to compute. 
 
@@ -61,8 +49,8 @@ We looked at Twenge’s study again when considering what methods might be poten
 
 We also used Wheaton College’s online Lexos analysis tool to identify the top 50 words used in the Communist Manifesto. After removing common English stopwords, the resulting wordcloud served as a starting point for us to begin testing our clustering tool.
 
-<a name="results"></a>
-<h3 data-magellan-destination="results">Results</h3>
+
+### Results
 
 We have represented our results visually in the appendices at the end of this paper.  The first appendix outlines the thirty words, fifteen ‘individualistic’ and fifteen ‘communal’, that would wanted to closely examine.  The second appendix consists of a table which displays each of the thirty words that we input into the clustering tool and the resulting cluster of words that the tool identified as having similar frequency patterns.  The third, and final, appendix has a sample of the line graphs associated with the selected words.  
 Upon closer analysis, several interesting results were apparent.  Of the fifteen ‘individualistic’ words that we identified in our word lists fourteen returned clusters; “Uniqueness” was not in the top 25,000 most frequent words in the Ngram data and did not return a cluster.  Of the fifteen ‘communal’ words, only eleven returned clusters; the inputs “communal”, “communitarian”, “socialism”, and “collectivism” did not return clusters.  Also, the average size of an ‘individualistic’ cluster was 65.286 words.  The average size of a ‘communal’ cluster was 46.545.  The averages were determined by summing up the total words in one of the two categories and dividing by the number of terms that output clusters.  (See Appendix B)
@@ -70,8 +58,8 @@ Upon closer analysis, several interesting results were apparent.  Of the fifteen
 In terms of upward or downward tendencies, all of the graphs produced using the numerical data for each clustered word show an increase over time.  That is, the average line graph of each cluster increases over the time period.  We did not see any decreasing graphs.  (See Appendix C)
 
 
-<a name="discuss"></a>
-<h3 data-magellan-destination="discuss">Discussion</h3>
+
+### Discussion
 
 The quantitative data that was output by the digital tool served as the basis for further analysis.  Below, we explore our research questions in relation to the data, discuss assumptions that we made in our project, outline biases of our project, and propose implications for future research. 
 

@@ -4,8 +4,6 @@ import Helmet from 'react-helmet';
 
 import Link from '../components/Link';
 
-import '../css/index.css';
-
 export default function Undergrad({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (

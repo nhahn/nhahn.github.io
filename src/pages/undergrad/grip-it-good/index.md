@@ -2,7 +2,7 @@
 title:  Grip it Good Part 2
 date:   2014-5-5 16:29:56
 summary: |
-    Taking our design idea from the <a href="/portfolio/grip_sense.html">fall</a>, we decided to go through with building one of the impliments: a force sensing can. Over the course of the semester, we prototyped and built a soda-can like prototype, using the actual outside of a soda-can, fitted with an internal chassis. The final version of our can is battery powered with a bluetooth module for communication back to a MATLAB program that reports the results. 
+    Taking our design idea from the , we decided to go through with building one of the impliments: a force sensing can. Over the course of the semester, we prototyped and built a soda-can like prototype, using the actual outside of a soda-can, fitted with an internal chassis. The final version of our can is battery powered with a bluetooth module for communication back to a MATLAB program that reports the results. 
 image: ./images/device_pic.jpg
 code: https://github.com/nhahn/gripitgood
 document: ./bme_report.pdf
@@ -20,7 +20,7 @@ collaborators:
     - Ting Xu: tingxu@cmu.edu
 ---
 
-###Background
+### Background
 
 From the fall semester, in summary, we learned that:
 
@@ -44,8 +44,8 @@ This translates well into the current market:
     </div>
 </div>
 
-<a name="device"></a>
-<h3 data-magellan-destination="device">The Device</h3>
+
+### The Device
 
 <div class="row">
     <div class="large-6 columns">
@@ -55,8 +55,8 @@ This translates well into the current market:
     </div>
 </div>
 
-<a name="software"></a>
-<h3 data-magellan-destination="software">Software Interface</h3>
+
+### Software Interface
 
 <div class="row">
     <div class="small-12 columns">
@@ -64,8 +64,8 @@ This translates well into the current market:
     </div>
 </div>
 
-<a name="signal"></a>
-<h3 data-magellan-destination="signal">Signal Pathway</h3>
+
+### Signal Pathway
 
 <div class="row">
     <div class="small-12 columns">
@@ -73,8 +73,8 @@ This translates well into the current market:
     </div>
 </div>
 
-<a name="production"></a>
-<h3 data-magellan-destination="production">Production</h3>
+
+### Production
 
 
 <div class="row">

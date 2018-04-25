@@ -14,9 +14,6 @@ collaborators:
   - Cindy Zeng: czeng@andrew.cmu.edu
 ---
 
-<a name="video"></a>
-<h3 data-magellan-destination="video">Concept Video</h3>
+### Concept Video
 
 <iframe width="760" height="400" src="//www.youtube.com/embed/bhv2wQB0Eoc" frameborder="0" allowfullscreen style="display: block; margin-left: auto; margin-right: auto;"></iframe>
-<br/>
-<br/>

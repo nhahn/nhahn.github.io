@@ -14,18 +14,7 @@ collaborators:
     - Julie Rekant: jrekant@andrew.cmu.edu
 ---
 
-<div data-magellan-expedition="fixed">
-    <dl class="sub-nav">
-        <dd data-magellan-arrival="background"><a href="#background">Intro</a></dd>
-        <dd data-magellan-arrival="inovation"><a href="#inovation">Innovation</a></dd>
-        <dd data-magellan-arrival="impact"><a href="#impact">Impact</a></dd>
-        <dd data-magellan-arrival="sig"><a href="#sig">Significance</a></dd>
-
-    </dl>
-</div>
-
-<a name="background"></a>
-<h3 data-magellan-destination="background">Intro</h3>
+### Intro
 
 A graft must be fixed to return the knee to an optimal stability. Although it would seem that graft strength is the most indicative property for ACL reconstruction stability, it is actually the strength of the graft fixation to the bone. (Urbibe, Arango, Frank, and Kiebzak, 2013) Fixation gives the graft bone tunnel interface necessary stiffness and strength (Woo, et al. 2000). There are many different fixation devices available, such as interference screws, soft tissue washers, suture-post constructs, simple staples, cross-pins, and titanium buttons (Woo, et al., 2000). Since the graft selection depends on the circumstance of the patient, different fixation techniques must be used as well. The current gold standard for fixation is the interference screw against a bone plug (Brand, 2000). One study suggests the most stable knee reconstruction is when the interference screw is positioned close to the articular surface with central and distal fixation (Ishibashi, et al., 1997).
 Furthermore, the tibia position relative to the femur when the graft is fixed has a considerable effect on the kinematics of the knee and the in situ force of the new graft (Hoher, et al., 1999). Specifically, when the graft is fixed at 30o knee flexion, with a 67N posterior tibial load, the resulting knee kinematics is closest to the native knee (Hoher, et al., 1999).
@@ -41,31 +30,31 @@ The TensiFixTM fixation device allows the surgeon to fix a graft at both ends, a
 
 <div class="row">
     <div class="medium-8 columns">
-        <img class="th" src="./images/acl_pic/screw_cross_section.jpg">
+        <img class="th" src="./images/screw_cross_section.jpg">
     </div>
     <div class="medium-4 columns">
-        <img class="th" src="./images/acl_pic/screw_exploded.png">
+        <img class="th" src="./images/screw_exploded.png">
     </div>
 </div>
 
 <a name="inovation"></a>
-<h3 data-magellan-destination="inovation">Innovation</h3>
+### Innovation
 
 Post surgically, ACL grafts have been seen to lose tension due to normal cyclic loads applied during rehabilitation (Singhal, et.al, 2005). As the tension in the graft decreases, the knee’s ability to translate anteriorly increases; an occurrence meant to be minimized by the ACL reconstructive surgery (Grover, et. al, 2005). With current fixation techniques, the amount of tension in the graft immediately after surgery is dependent on that which the surgeon can provide in the tibial fixation. With our device, the surgeon is able to add additional tension to the graft at the femoral site after both ends of the graft are fixed.
 
 <a name="impact"></a>
-<h3 data-magellan-destination="impact">Impact</h3>
+### Impact
 
 TensiFixTM’s surgical importance lies in its ability to allow the adjustment of the graft after it has already been fixed in place. Currently, ACL reconstruction grafts are tensioned by manually pulling on the graft before fixation (Fu, Cohen 2006). This method can have many pitfalls. For example, variability in graft tension is associated with manual tensioning, as manual methods have been proven to be irreproducible from patient to patient (O’Neill, et al 2011). Also, fixation after tensioning limits the surgeon’s inability to further tension the graft if need arises. Thus, if the graft were to either not have enough tension initially or lose tension over time due to factors such as lengthening due to cyclic loading, the surgeon would have to redo the reconstruction to add tension to the graft (Harvey, et al. 2005). TensiFixTM functions like a regular Endobutton, allowing the surgeon to manually tension and fix the graft using the current manual method. However, should the fixed graft somehow lose tension, TensiFixTM’s tensioning screw can be backed out of its barrel, re-tensioning the graft. Thus, the surgeon is not forced to redo the entire reconstruction to tension the graft.
 
 <a name="sig"></a>
-<h3 data-magellan-destination="sig">Significance</h3>
+### Significance
 
 TensiFixTM is able to easily increase the tension during the ACL reconstruction. It addresses the need for a reliable way to increase the tension in knee ligament reconstruction surgeries. It uses an adjustable barrel-screw mechanism that is capable of adding tension to an existing graft. The TensiFixTM consists of three components: an externally threaded suture retainer, an internally threaded hexagonal barrel and a flat button retainer.
 
 <div class="row">
     <div class="medium-4 columns">
-        <img class="th" src="./images/acl_pic/insertion_cropped.png">
+        <img class="th" src="./images/insertion_cropped.png">
     </div>
     <div class="medium-8 columns">
         <p>
@@ -77,7 +66,7 @@ The device with the graft attached to it will be pulled through the end of the f
 </div>
 
 <ul class="small-block-grid-2">
-    <li><img class="th" src="./images/acl_pic/flattening_cropped.png"></li>
-    <li><img class="th" src="./images/acl_pic/tightening_cropped.png"></li>
+    <li><img class="th" src="./images/flattening_cropped.png"></li>
+    <li><img class="th" src="./images/tightening_cropped.png"></li>
 </ul>
 
