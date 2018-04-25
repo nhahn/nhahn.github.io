@@ -1,0 +1,4 @@
+# Redirect domain aliases to primary domain
+http://nhahn.io/* http://nphahn.com/:splat 301!
+http://nhahn.me/* http://nphahn.com/:splat 301!
+http://nhahn.org/* http://nphahn.com/:splat 301!
