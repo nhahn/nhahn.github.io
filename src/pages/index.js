@@ -49,11 +49,11 @@ export default function Index({ data }) {
                   <div key={post.id}>
                     <Row gutter={32}>
                       <Col md={{span: 16, offset: 8}} sm={{span: 24}}>
-                        <h4 style={{margin: 0}}>
+                        <h3 style={{margin: 0}}>
                           <Link to={post.fields.slug}>
                             {post.frontmatter.title}
                           </Link>
-                        </h4>
+                        </h3>
                         <h6 style={{margin: '0px 0px 10px 0px'}}>{post.frontmatter.authors.join(', ')}</h6>
                       </Col>
                     </Row>  

@@ -4,6 +4,7 @@ full_title: "Bento Browser: Complex Mobile Search Without Tabs"
 date:   2017-12-28 15:00:00
 summary: Bento Browser is a prototype iOS application that helps people organize their complex online searching tasks. By removing the typical tab based structure of the browser and replacing it with a task hierarchy, we let people seamlessly organize, suspend and resume their searching tasks. Check it out on the App Store!
 selected: true
+doi: 10.1145/3173574.3173825
 conference: CHI 2018
 video: https://youtu.be/GsDGqKBlnB4
 tags:

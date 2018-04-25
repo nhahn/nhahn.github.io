@@ -4,11 +4,22 @@ import BackIcon from 'react-icons/lib/fa/chevron-left';
 import ForwardIcon from 'react-icons/lib/fa/chevron-right';
 import rehypeReact from "rehype-react"
 import Img from "gatsby-image";
+import styled from 'styled-components'
 
 import Link from '../components/Link';
 import Tags from '../components/Tags';
 
 import '../css/blog-post.css';
+
+const Citation = styled.pre`
+  tab-size: 4;
+  background-color: white;
+  border: 1px dashed #a7a7a7;
+  padding: 10px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1rem;
+`
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -17,7 +28,7 @@ const renderAst = new rehypeReact({
 
 export default function Template({ data, pathContext }) {
   const { markdownRemark: post } = data;
-  const { next, prev } = pathContext;
+  const { next, prev, bibtex, citation } = pathContext;
   
   //TODO for unpublished: <meta name="robots" content="noindex,nofollow>
   
@@ -35,6 +46,14 @@ export default function Template({ data, pathContext }) {
         <div className="blog-post-content">
           {renderAst(post.htmlAst)}
         </div>
+        {bibtex && 
+          <div>
+            <h4>Citation</h4>
+            <Citation>{citation}</Citation>
+            <h4>Bibtex</h4>
+            <Citation>{bibtex}</Citation>
+          </div>
+        }
         <Tags list={post.frontmatter.tags || []} />
         <div className="navigation">
           {prev &&

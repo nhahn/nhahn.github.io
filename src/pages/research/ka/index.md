@@ -6,6 +6,7 @@ summary: The Knowledge Accelerator (KA) uses crowdworkers to synthesize differen
 selected: true
 conference: CHI 2016
 award: Honorable Mention
+doi: 10.1145/2858036.2858364
 tags:
   - Crowdsourcing
   - Sensemaking

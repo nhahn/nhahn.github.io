@@ -6,6 +6,7 @@ summary: Many crowd clustering approaches have difficulties providing global con
 selected: true
 conference: CHI 2016
 award: Honorable Mention
+doi: 10.1145/2858036.2858411
 tags:
   - Crowdsourcing
   - Machine Learning
