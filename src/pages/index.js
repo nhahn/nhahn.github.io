@@ -87,11 +87,16 @@ export default function Index({ data }) {
       <Row gutter={32}>
         <Col xl={18}>
           <h2>Bio</h2>
-          <div>
-            <p>
-              I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank" rel="noopener noreferrer">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank" rel="noopener noreferrer">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build a number of interventions to assist users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing.
-            </p>
-          </div>
+          <Row gutter={32}>
+            <Col md={8}>
+              <Img fluid={data.headshot.childImageSharp.fluid} alt="Nathan's headshot"/>
+            </Col>
+            <Col md={16}>
+              <p>
+                I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank" rel="noopener noreferrer">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank" rel="noopener noreferrer">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build a number of interventions to assist users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing.
+              </p>
+            </Col>
+          </Row>
           <h2>Selected Work</h2>
           <div>
             {posts
@@ -166,6 +171,15 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    headshot: file(
+      relativePath: { regex: "/headshot.jpeg/" }
+    ) {
+      childImageSharp {
+        fluid(toFormat: PNG) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     markdown: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
