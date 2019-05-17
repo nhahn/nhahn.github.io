@@ -92,6 +92,10 @@ export default class Header extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    TweenMax.killAll(false, false, true);
+  }
+
   @autobind
   affixChange(val) {
     this.setState({affixed: val});
@@ -383,7 +387,7 @@ var tesselation = (function() {
         for (i = n; i--; ) {
           TweenMax.to(toRemove.children[i], t*0.4, {opacity: 0, delay: t*(0.3*i/n)});
         }
-        TweenMax.delayedCall(t * (0.7 + 0.05), function(group) { svg.removeChild(group); }, [toRemove], this);
+        TweenMax.delayedCall(t * (0.7 + 0.05), function(group) { if(svg.contains(group)) {svg.removeChild(group);} }, [toRemove], this);
       }
       var g = createRandomTesselation();
       n = g.children.length;

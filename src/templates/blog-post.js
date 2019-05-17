@@ -39,7 +39,7 @@ export default function Template({ data, pageContext }) {
       <div className="blog-post">
         <Row gutter={16}>
           <Col sm={24} md={12}>
-            <h1>
+            <h1 style={{marginTop: 0}}>
               {post.frontmatter.full_title || post.frontmatter.title}
             </h1>
             <h3>

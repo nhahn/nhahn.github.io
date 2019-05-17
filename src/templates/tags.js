@@ -3,9 +3,6 @@ import GatsbyLink from 'gatsby-link';
 import {FaHome, FaTags} from 'react-icons/fa';
 
 import Link from '../components/Link';
-import 'antd/lib/style/core/motion.less'
-import 'antd/lib/style/core/iconfont.less'
-import 'antd/lib/style/themes/default.less'
 
 export default function Tags({ pageContext }) {
   const { posts, post, tag } = pageContext;

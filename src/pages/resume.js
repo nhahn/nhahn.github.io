@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import {Row, Col} from 'antd'
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
-import DefaultLayout from '../layouts/default'
 
 //Things to put on here:
 //Bio (Research, Personal)
@@ -22,7 +21,7 @@ import 'antd/lib/grid/style/index.css';
 export default function Resume({ data }) {
 
   return (
-    <DefaultLayout>
+    <div>
       <Helmet title={`Resume | Nathan Hahn`}/>
       <Row gutter={32}>
         <Col xl={24} style={{display: 'flex', justifyContent: 'center'}}>
@@ -32,6 +31,6 @@ export default function Resume({ data }) {
           </div>
         </Col>
       </Row>
-    </DefaultLayout>
+    </div>
   );
 }

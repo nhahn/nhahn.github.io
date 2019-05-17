@@ -8,7 +8,6 @@ import Img from "gatsby-image";
 import { rhythm } from "../utils/typography"
 import TagColors from '../components/Tag_Colors'
 import { graphql } from "gatsby"
-import DefaultLayout from '../layouts/default'
 
 import 'antd/lib/grid/style/index.css';
 import 'antd/lib/tag/style/index.css';
@@ -16,7 +15,7 @@ import 'antd/lib/tag/style/index.css';
 export default function Working({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <DefaultLayout>
+    <div>
       <Helmet title={`In Progress | Nathan Hahn`}/>
       <div>
         {posts
@@ -57,7 +56,7 @@ export default function Working({ data }) {
             );
           })}
       </div>
-    </DefaultLayout>
+    </div>
   );
 }
 

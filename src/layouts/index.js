@@ -13,7 +13,7 @@ const Body = styled.div`
 
 export default function Layout({location, children}) {
   return (
-    <div style={{backgroundColor: '#f3f3f3'}}>
+    <div style={{backgroundColor: '#ffffff'}}>
       <Helmet
         title="Nathan Hahn"
         meta={[

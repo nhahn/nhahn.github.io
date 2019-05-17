@@ -10,7 +10,6 @@ import moment from 'moment';
 import { rhythm } from "../utils/typography"
 import TagColors from '../components/Tag_Colors'
 import { graphql } from "gatsby"
-import DefaultLayout from '../layouts/default'
 
 //Things to put on here:
 //Bio (Research, Personal)
@@ -72,13 +71,19 @@ const Time = styled.time`
   }
 `;
 
+const StyledImg = styled(Img)`
+  @media only screen and (min-width: 769px) {
+    margin-top: -50px;
+  }
+`
+
 export default function Index({ data }) {
   const { edges: posts } = data.markdown;
   const events = find(data.yaml.edges, (edge) => !!edge.node.events).node.events
   const news = find(data.yaml.edges, (edge) => !!edge.node.news).node.news
 
   return (
-    <DefaultLayout>
+    <div>
       <Row gutter={32}>
         <Col xl={18}>
           <h2>Bio</h2>
@@ -93,7 +98,7 @@ export default function Index({ data }) {
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
                 return (
-                  <div key={post.id}>
+                  <div key={post.id} style={{marginBottom: 12}}>
                     <Row gutter={32}>
                       <Col md={{span: 16, offset: 8}} sm={{span: 24}}>
                         <h3 style={{margin: 0}}>
@@ -106,7 +111,7 @@ export default function Index({ data }) {
                     </Row>
                     <Row gutter={32}>
                       <Col md={8}>
-                        <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
+                        <StyledImg sizes={post.fields.imgPath.childImageSharp.sizes} />
                       </Col>
                       <Col md={16}>
                         <p style={{margin: 0}}>
@@ -155,7 +160,7 @@ export default function Index({ data }) {
           </Row>
         </Col>
       </Row>
-    </DefaultLayout>
+    </div>
   );
 }
 

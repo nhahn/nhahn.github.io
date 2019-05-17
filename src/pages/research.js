@@ -3,27 +3,34 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import {Row, Col, Tag} from 'antd'
 import Img from "gatsby-image";
+import styled from 'styled-components'
+
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
 import { rhythm } from "../utils/typography"
 import TagColors from '../components/Tag_Colors'
 import { graphql } from "gatsby"
-import DefaultLayout from '../layouts/default'
 
 import 'antd/lib/grid/style/index.css';
 import 'antd/lib/tag/style/index.css';
 
+const StyledImg = styled(Img)`
+  @media only screen and (min-width: 769px) {
+    margin-top: -50px;
+  }
+`
+
 export default function Research({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <DefaultLayout>
+    <div>
       <Helmet title={`Research | Nathan Hahn`}/>
       <div>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <div key={post.id}>
+              <div key={post.id} style={{marginBottom: 24}}>
                 <Row gutter={32}>
                   <Col md={{span: 16, offset: 8}} sm={{span: 24}}>
                     <h2 style={{margin: 0}}>
@@ -36,7 +43,7 @@ export default function Research({ data }) {
                 </Row>
                 <Row gutter={32}>
                   <Col md={8}>
-                    <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
+                    <StyledImg sizes={post.fields.imgPath.childImageSharp.sizes} />
                   </Col>
                   <Col md={16}>
                     <p style={{margin: 0}}>
@@ -55,7 +62,7 @@ export default function Research({ data }) {
             );
           })}
       </div>
-    </DefaultLayout>
+    </div>
   );
 }
 

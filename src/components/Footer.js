@@ -36,7 +36,7 @@ const Footer = () => {
           <span style={{fontSize: '1.5em'}}>
             <a href="https://scholar.google.com/citations?user=DRg2HbgAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener noreferrer" style={{paddingRight: 15, color:'white'}}><Icon type="google"/></a>
             <a href="https://github.com/nhahn" target="_blank" rel="noopener noreferrer" style={{paddingRight: 15, color:'white'}}><Icon type="github"/></a>
-            <a href="https://www.linkedin.com/in/nphahn/" target="_blank" rel="noopener noreferrer" style={{color:'white'}}><Icon type="linkedin"/></a>
+            <a href="https://www.linkedin.com/in/nphahn/" target="_blank" rel="noopener noreferrer" style={{paddingRight: 15, color:'white'}}><Icon type="linkedin"/></a>
             <a href="https://instagram.com/dabbledork" target="_blank" rel="noopener noreferrer" style={{paddingRight: 15, color:'white'}}><Icon type="instagram"/></a>
           </span>
         </Col>

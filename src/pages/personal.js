@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
-import DefaultLayout from '../layouts/default'
 
 //Things to put on here:
 //Bio (Research, Personal)
@@ -20,9 +19,9 @@ import DefaultLayout from '../layouts/default'
 export default function Personal({ data }) {
 
   return (
-    <DefaultLayout>
+    <div>
       <Helmet title={`Side Projects | Nathan Hahn`}/>
       <h1>Coming Soon!</h1>
-    </DefaultLayout>
+    </div>
   );
 }

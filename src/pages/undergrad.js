@@ -3,12 +3,11 @@ import GatsbyLink from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import Link from '../components/Link';
-import DefaultLayout from '../layouts/default'
 
 export default function Undergrad({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <DefaultLayout>
+    <div>
       <Helmet title={`Undergrad | Nathan Hahn`}/>
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
@@ -30,7 +29,7 @@ export default function Undergrad({ data }) {
             </div>
           );
         })}
-    </DefaultLayout>
+    </div>
   );
 }
 
