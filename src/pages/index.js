@@ -103,7 +103,7 @@ export default function Index({ data }) {
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
                 return (
-                  <div key={post.id} style={{marginBottom: 12}}>
+                  <div key={post.id} style={{marginBottom: rhythm(3/2)}}>
                     <Row gutter={32}>
                       <Col md={{span: 16, offset: 8}} sm={{span: 24}}>
                         <h3 style={{margin: 0}}>
@@ -122,7 +122,7 @@ export default function Index({ data }) {
                         <p style={{margin: 0}}>
                           {post.frontmatter.summary}
                         </p>
-                        <div style={{marginBottom: rhythm(1)}}>
+                        <div>
                           <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>{post.frontmatter.conference}</Tag>
                           {post.frontmatter.award &&
                             <Tag color="gold">{post.frontmatter.award}</Tag>}
