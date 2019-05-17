@@ -4,11 +4,6 @@ const fsExtra = require('fs-extra');
 const fs = require('fs')
 const request = require('request-promise-native')
 
-exports.modifyBabelrc = ({ babelrc }) => ({
-  ...babelrc,
-  plugins: babelrc.plugins.concat(['transform-decorators-legacy', 'transform-class-properties']),
-})
-
 const createTagPages = (createPage, edges) => {
   const tagTemplate = path.resolve(`src/templates/tags.js`);
   const posts = {};
@@ -49,8 +44,8 @@ const createTagPages = (createPage, edges) => {
     });
 };
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
   return graphql(`{
@@ -102,7 +97,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
     // Create pages for each markdown file.
     let postPromises = posts.map(({ node }, index) => {
-      
+
       if (node.frontmatter.doi) {
         let bibtexOptions = {
             url: `http://doi.org/${node.frontmatter.doi}`,
@@ -110,7 +105,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               'Accept': 'application/x-bibtex'
             }
         }
-        
+
         let citationOptions = {
             url: `http://doi.org/${node.frontmatter.doi}`,
             headers: {
@@ -131,15 +126,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       } else {
         createPostPage(node, index);
         return node;
-      }      
+      }
     });
 
     return Promise.all(postPromises);
   })
 };
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
@@ -153,11 +148,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       node,
       value: value.split('/')[1],
     })
-    
+
     //Find the image or document
     let dir = path.join(process.cwd(), 'src/pages', value),
         files=fs.readdirSync(dir), doc, img;
-    
+
     files.forEach(file => {
       let fullPath = path.join(value, file),
           extension = path.extname(file);
@@ -166,14 +161,14 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       if (extension == '.png' || extension == '.jpg' || extension == '.jpeg')
         img = file;
     })
-    
+
     if (doc) {
       createNodeField({
         name: `docPath`,
         node,
         value: doc,
       })
-    } 
+    }
     if (img) {
       createNodeField({
         name: `imgPath`,
@@ -184,7 +179,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   } else if (node.internal.type === 'File' && node.internal.mediaType === `application/pdf`) {
     let source = `${__dirname}/src/pages`;
     let destination = ''
-    if (node.dir.includes(source)) {  
+    if (node.dir.includes(source)) {
       const relativeToDest = node.dir.replace(source, '');
       const newPath = path.join(
           process.cwd(),
@@ -193,7 +188,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           relativeToDest,
           node.base
       );
-      
+
       fsExtra.copy(node.absolutePath, newPath, err => {
         if (err) {
           console.error('Error copying file', err);

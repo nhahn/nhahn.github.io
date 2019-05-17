@@ -1,15 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 import Link from "gatsby-link"
 import styled from 'styled-components'
-import {TweenMax} from "gsap";
-import {rhythm, options} from "../utils/typography" 
+import {TweenMax, Sine, Back} from "gsap";
+import {rhythm} from "../utils/typography"
 import {Affix} from 'antd'
 import autobind from 'autobind-decorator'
 import Media from "react-media";
 
 import 'antd/lib/affix/style/index.css';
-
 
 const Background = styled.svg`
   width: 100%;
@@ -70,15 +68,15 @@ const SubName = styled.h2`
 `
 
 export default class Header extends React.Component {
-  
+
   state = {
     current: 'home',
     affixed: false
   }
 
   componentWillReceiveProps(nextProps) {
-    const isRoot = location.pathname === '/';
-    this.setState({current: location.pathname});
+    //const isRoot = window.location.pathname === '/';
+    this.setState({current: window.location.pathname});
   }
 
   handleClick = (e) => {
@@ -87,22 +85,24 @@ export default class Header extends React.Component {
       current: e.key,
     });
   }
-  
+
   componentDidMount() {
-    init(this.background);
+    if (this.background) {
+      init(this.background);
+    }
   }
 
   @autobind
   affixChange(val) {
     this.setState({affixed: val});
   }
-  
+
   render() {
 
-    
+
     return (
     <div style={{position: 'relative', marginBottom: 30}}>
-      <Background innerRef={ref => this.background = ref} viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+      <Background ref={ref => this.background = ref} viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
         <defs>
           <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0" colorInterpolation="sRGB">
             <stop id="stop1a" offset="0%" stopColor="#12a3b4"></stop>
@@ -125,17 +125,17 @@ export default class Header extends React.Component {
               textDecoration: 'none',
               boxShadow: 'none'
             }}>
-          Nathan Hahn
-          </Link>  
+            Nathan Hahn
+          </Link>
         </Name>
         <Media query="(max-width: 599px)">
-        {matches =>
-          matches ? (
-            <h2 style={{color: 'white', marginTop: 0}}>HCII | CMU</h2>
-          ) : (
-            <h2 style={{color: 'white', marginTop: 0}}>Human Computer Interaction Institute | Carnegie Mellon University</h2>
-          )
-        }
+          {matches =>
+            matches ? (
+              <h2 style={{color: 'white', marginTop: 0}}>HCII | CMU</h2>
+            ) : (
+              <h2 style={{color: 'white', marginTop: 0}}>Human Computer Interaction Institute | Carnegie Mellon University</h2>
+            )
+          }
         </Media>
       </HeaderContainer>
       <Affix onChange={this.affixChange}>
@@ -152,46 +152,7 @@ export default class Header extends React.Component {
         </NavLinks>
       </Affix>
     </div>)
-    
-//    return (        
-//      <div
-//        style={{
-//          background: `rebeccapurple`,
-//          marginBottom: `1.45rem`,
-//        }}
-//      >
-//        <div
-//          style={{
-//            margin: `0 auto`,
-//            maxWidth: 960,
-//            padding: `1rem 0.75rem`,
-//          }}
-//        >
-//          <h1 style={{ margin: 0, fontSize: `2rem` }}>
-//            <Link
-//              to="/"
-//              style={{
-//                color: 'white',
-//                textDecoration: 'none',
-//              }}
-//            >
-//              Gatsby Blog
-//            </Link>
-//          </h1>
-//          <Menu onClick={this.handleClick}
-//                selectedKeys={[this.state.current]}
-//                mode="horizontal">
-//            <Menu.Item key="home">
-//              Home
-//            </Menu.Item>
-//            <Menu.Item key="bento">
-//              Bento
-//            </Menu.Item>
-//          </Menu>
-//        </div>
-//      </div>
-//    )
-    
+
   }
 
 }
@@ -503,6 +464,3 @@ var gradients = (function() {
     }
   };
 })();
-
-
-

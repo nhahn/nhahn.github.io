@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import styled from 'styled-components'
 import {Row, Col, Tag} from 'antd'
-import {find} from 'lodash'
 import Img from "gatsby-image";
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
-import { rhythm, options } from "../utils/typography" 
+import { rhythm } from "../utils/typography"
 import TagColors from '../components/Tag_Colors'
+import { graphql } from "gatsby"
+import DefaultLayout from '../layouts/default'
 
 import 'antd/lib/grid/style/index.css';
 import 'antd/lib/tag/style/index.css';
@@ -16,7 +16,7 @@ import 'antd/lib/tag/style/index.css';
 export default function Working({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <div>
+    <DefaultLayout>
       <Helmet title={`In Progress | Nathan Hahn`}/>
       <div>
         {posts
@@ -33,7 +33,7 @@ export default function Working({ data }) {
                     </h2>
                     <h6 style={{margin: '0px 0px 10px 0px'}}>{post.frontmatter.authors.join(', ')}</h6>
                   </Col>
-                </Row>  
+                </Row>
                 <Row gutter={32}>
                   <Col md={8}>
                     <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
@@ -43,21 +43,21 @@ export default function Working({ data }) {
                       {post.frontmatter.summary}
                     </p>
                     <div style={{marginBottom: rhythm(1)}}>
-                      {post.frontmatter.conference && 
+                      {post.frontmatter.conference &&
                         <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>{post.frontmatter.conference}</Tag>
                       }
-                      {post.frontmatter.award && 
+                      {post.frontmatter.award &&
                         <Tag color="gold">{post.frontmatter.award}</Tag>}
-                      {post.fields.docPath && 
-                       <a href={post.fields.docPath} target="_blank">PDF</a>}
+                      {post.fields.docPath &&
+                        <a href={post.fields.docPath} target="_blank" rel="noopener noreferrer">PDF</a>}
                     </div>
                   </Col>
-                </Row>              
+                </Row>
               </div>
             );
           })}
       </div>
-    </div>
+    </DefaultLayout>
   );
 }
 

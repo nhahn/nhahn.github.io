@@ -1,21 +1,16 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import BackIcon from 'react-icons/lib/fa/chevron-left';
-import ForwardIcon from 'react-icons/lib/fa/chevron-right';
 import rehypeReact from "rehype-react"
 import Img from "gatsby-image";
 import styled from 'styled-components'
-import {Row, Col, Button, Tag} from 'antd'
+import {Row, Col, Tag} from 'antd'
 import TagColors from '../components/Tag_Colors'
-
-import Link from '../components/Link';
 import Tags from '../components/Tags';
 
 import '../css/blog-post.css';
 
 import 'antd/lib/grid/style/index.css';
 import 'antd/lib/tag/style/index.css';
-import 'antd/lib/button/style/index.css';
 
 const Citation = styled.pre`
   tab-size: 4;
@@ -32,12 +27,12 @@ const renderAst = new rehypeReact({
   //components: { "my-component": MyComponent }
 }).Compiler
 
-export default function Template({ data, pathContext }) {
+export default function Template({ data, pageContext }) {
   const { markdownRemark: post } = data;
-  const { next, prev, bibtex, citation } = pathContext;
-  
+  const { bibtex, citation } = pageContext;
+
   //TODO for unpublished: <meta name="robots" content="noindex,nofollow>
-  
+
   return (
     <div className="blog-post-container">
       <Helmet title={`${post.frontmatter.title} | Nathan Hahn`}/>
@@ -53,10 +48,10 @@ export default function Template({ data, pathContext }) {
             <div style={{paddingBottom: 10}}>
               {post.frontmatter.conference && <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>  {post.frontmatter.conference}
               </Tag>}
-              {post.frontmatter.award && 
+              {post.frontmatter.award &&
                 <Tag color="gold">{post.frontmatter.award}</Tag>}
-              {post.fields.docPath && 
-               <a href={post.fields.docPath} target="_blank">PDF</a>}
+              {post.fields.docPath &&
+                <a href={post.fields.docPath} target="_blank" rel="noopener noreferrer">PDF</a>}
             </div>
           </Col>
           <Col sm={24} md={12}>
@@ -66,7 +61,7 @@ export default function Template({ data, pathContext }) {
         <div className="blog-post-content">
           {renderAst(post.htmlAst)}
         </div>
-        {bibtex && 
+        {bibtex &&
           <div >
             <h4>Citation</h4>
             <Citation>{citation}</Citation>
@@ -81,7 +76,9 @@ export default function Template({ data, pathContext }) {
 }
 
 /** Navigation links between pages
+//import {FaChevronLeft as BackIcon, FaChevronRight as ForwardIcon} from 'react-icons/fa';
 
+  // next and prev in props
         <div className="navigation">
           {prev &&
             <Link className="link prev" to={prev.fields.slug}>

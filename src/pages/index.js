@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
 import styled from 'styled-components'
 import {Row, Col, Tag} from 'antd'
 import {find} from 'lodash'
@@ -8,11 +7,10 @@ import Img from "gatsby-image";
 import moment from 'moment';
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
-import { rhythm, options } from "../utils/typography" 
+import { rhythm } from "../utils/typography"
 import TagColors from '../components/Tag_Colors'
-
-import 'antd/lib/grid/style/index.css';
-import 'antd/lib/tag/style/index.css';
+import { graphql } from "gatsby"
+import DefaultLayout from '../layouts/default'
 
 //Things to put on here:
 //Bio (Research, Personal)
@@ -26,6 +24,9 @@ import 'antd/lib/tag/style/index.css';
 
 //Resume Link?
 
+import 'antd/lib/grid/style/index.css';
+import 'antd/lib/tag/style/index.css';
+
 const Time = styled.time`
   font-size: 0.5em; /* change icon size */
   display: inline-block;
@@ -37,7 +38,7 @@ const Time = styled.time`
   box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
   margin-right: 10px;
   overflow: hidden;
-  
+
   * {
     display: block;
     width: 100%;
@@ -77,13 +78,13 @@ export default function Index({ data }) {
   const news = find(data.yaml.edges, (edge) => !!edge.node.news).node.news
 
   return (
-    <div>
+    <DefaultLayout>
       <Row gutter={32}>
         <Col xl={18}>
           <h2>Bio</h2>
           <div>
             <p>
-              I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build a number of interventions to assist users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing. 
+              I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank" rel="noopener noreferrer">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank" rel="noopener noreferrer">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build a number of interventions to assist users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing.
             </p>
           </div>
           <h2>Selected Work</h2>
@@ -102,7 +103,7 @@ export default function Index({ data }) {
                         </h3>
                         <h6 style={{margin: '0px 0px 10px 0px'}}>{post.frontmatter.authors.join(', ')}</h6>
                       </Col>
-                    </Row>  
+                    </Row>
                     <Row gutter={32}>
                       <Col md={8}>
                         <Img sizes={post.fields.imgPath.childImageSharp.sizes} />
@@ -113,13 +114,13 @@ export default function Index({ data }) {
                         </p>
                         <div style={{marginBottom: rhythm(1)}}>
                           <Tag color={TagColors[post.frontmatter.conference.split(' ')[0].toUpperCase()] || "cyan"}>{post.frontmatter.conference}</Tag>
-                          {post.frontmatter.award && 
+                          {post.frontmatter.award &&
                             <Tag color="gold">{post.frontmatter.award}</Tag>}
-                          {post.fields.docPath && 
-                           <a href={post.fields.docPath} target="_blank">PDF</a>}
+                          {post.fields.docPath &&
+                            <a href={post.fields.docPath} target="_blank" rel="noopener noreferrer">PDF</a>}
                         </div>
                       </Col>
-                    </Row>              
+                    </Row>
                   </div>
                 );
               })}
@@ -131,9 +132,9 @@ export default function Index({ data }) {
               <h3>Recent Activities</h3>
               {events.map((event, idx) => {
                 let date = moment(event.date_start);
-                
+
                 return (<div key={idx} style={{display: 'flex', marginBottom: 10, alignItems: 'center'}}>
-                  <Time datetime={event.date_start} class="icon">
+                  <Time datetime={event.date_start} className="icon">
                     <em>{date.format('YYYY')}</em>
                     <strong>{date.format('MMMM')}</strong>
                     <span>{date.format('D')}</span>
@@ -146,7 +147,7 @@ export default function Index({ data }) {
               <h3>Recent Press</h3>
               {news.map((article, idx) => {
                 return (<div key={idx}>
-                  <h4 style={{marginBottom: 0}}><a target="_blank" href={article.url}>{article.title}</a></h4>
+                  <h4 style={{marginBottom: 0}}><a target="_blank" href={article.url} rel="noopener noreferrer">{article.title}</a></h4>
                   <em>{article.venue} &mdash; {moment(article.date).format('MMM YY\'')}</em>
                 </div>)
               })}
@@ -154,7 +155,7 @@ export default function Index({ data }) {
           </Row>
         </Col>
       </Row>
-    </div>
+    </DefaultLayout>
   );
 }
 

@@ -1,12 +1,14 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
-import HomeIcon from 'react-icons/lib/fa/home';
-import TagsIcon from 'react-icons/lib/fa/tags';
+import {FaHome, FaTags} from 'react-icons/fa';
 
 import Link from '../components/Link';
+import 'antd/lib/style/core/motion.less'
+import 'antd/lib/style/core/iconfont.less'
+import 'antd/lib/style/themes/default.less'
 
-export default function Tags({ pathContext }) {
-  const { posts, post, tag } = pathContext;
+export default function Tags({ pageContext }) {
+  const { posts, post, tag } = pageContext;
   if (tag) {
     return (
       <div>
@@ -30,7 +32,7 @@ export default function Tags({ pathContext }) {
           })}
         </ul>
         <Link to="/tags">
-          <TagsIcon /> All tags
+          <FaTags /> All tags
         </Link>
       </div>
     );
@@ -40,7 +42,7 @@ export default function Tags({ pathContext }) {
       <h1>Tags</h1>
       <ul className="tags">
         {Object.keys(posts).map(tagName => {
-          const tags = posts[tagName];
+          //const tags = posts[tagName];
           return (
             <li key={tagName}>
               <GatsbyLink to={`/tags/${tagName}`}>
@@ -51,7 +53,7 @@ export default function Tags({ pathContext }) {
         })}
       </ul>
       <Link to="/">
-        <HomeIcon /> All posts
+        <FaHome /> All posts
       </Link>
     </div>
   );

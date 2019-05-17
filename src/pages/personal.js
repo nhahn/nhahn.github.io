@@ -1,15 +1,9 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import styled from 'styled-components'
-import {Row, Col} from 'antd'
-import {find} from 'lodash'
-import Img from "gatsby-image";
+
 //import { Card, Icon, Avatar } from 'antd';
 //const { Meta } = Card;
-import { rhythm, options } from "../utils/typography" 
-
-import 'antd/lib/grid/style/index.css';
+import DefaultLayout from '../layouts/default'
 
 //Things to put on here:
 //Bio (Research, Personal)
@@ -26,9 +20,9 @@ import 'antd/lib/grid/style/index.css';
 export default function Personal({ data }) {
 
   return (
-    <div>
+    <DefaultLayout>
       <Helmet title={`Side Projects | Nathan Hahn`}/>
       <h1>Coming Soon!</h1>
-    </div>
+    </DefaultLayout>
   );
 }
