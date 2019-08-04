@@ -93,7 +93,7 @@ export default function Index({ data }) {
             </Col>
             <Col md={16}>
               <p>
-                I'm a current PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank" rel="noopener noreferrer">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank" rel="noopener noreferrer">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've build systems to help users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing.
+                I am currently a PhD student in the Carnegie Mellon <a href="https://hcii.cmu.edu" target="_blank" rel="noopener noreferrer">Human Computer Interaction Institute (HCII)</a> working under <a href="http://kittur.org" target="_blank" rel="noopener noreferrer">Niki Kittur</a>. My current research focuses on the topic of Sensemaking &mdash; or how individuals come to an understanding of a difficult subject from a large set of information. This is normally in the context of online search or information seeking &mdash; such as planning a large vacation, learning about a medical disease, or investigating a new hobby. In our lab, we've built systems to help users while they're sensemaking, using techniques such as crowdsourcing, visualization, and natural language processing.
               </p>
             </Col>
           </Row>
