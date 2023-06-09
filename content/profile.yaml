@@ -1,0 +1,28 @@
+- profile:
+  initials: NH
+  name: Nathan Hahn
+  profession: Computer Scientist
+  image: images/profile.jpg
+  location: Washington, DC
+  relocation: true
+  company: DEVCOM, Army Research Labs
+  for_hire: true
+  focus: Building Worthwhile Experiences
+  focus_url: ""
+  about: |
+    I work to ideate, design, develop and test novel solutions and techniques for creating pleasant and streamlined end-user experiences. From mobile technologies, to web, to cross-reality experiences, I've worked in a number of domains to develop new ways for people to interact with information in a more intuitive manner.
+
+    My experience as a research scientist and systems engineer has allowed me to experience and touch the product lifecycle at all point, and its my belief that efficient, quick iteration allows products to flourish. I'm looking for opportunities that would allow me to work closely with a team and end-users to build technologies that improve and simplify every day life experiences.
+  skills:
+    - JavaScript
+    - HTML / CSS
+    - Ruby on Rails
+  tools:
+    - React
+    - VSCode
+    - Gatsby
+  budget:
+    currency: $
+    min: 5
+    max: 30
+    default: 10
