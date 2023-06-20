@@ -31,9 +31,11 @@ module.exports = ({ actions }) => {
 
     type PublicationsYaml implements Node {
       id: ID!
-      name: String!
+      title: String!
       authors: String!
-      link: String
+      pdf: File @fileByRelativePath
+      year: Int
+      doi: String
       description: String
     }
   `)

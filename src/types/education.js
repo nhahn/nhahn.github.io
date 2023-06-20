@@ -19,6 +19,10 @@ export const query = graphql`
     major
     minor
     thesis
-    image
+    image {
+      childImageSharp {
+        gatsbyImageData(width: 640, quality: 85)
+      }
+    }
   }
 `

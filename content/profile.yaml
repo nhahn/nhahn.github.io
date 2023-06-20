@@ -6,8 +6,8 @@
   location: Washington, DC
   relocation: true
   company: DEVCOM, Army Research Labs
-  for_hire: true
-  focus: Building Worthwhile Experiences
+  for_hire: false
+  focus: Building Pleasant Experiences
   focus_url: ""
   about: |
     I work to ideate, design, develop and test novel solutions and techniques for creating pleasant and streamlined end-user experiences. From mobile technologies, to web, to cross-reality experiences, I've worked in a number of domains to develop new ways for people to interact with information in a more intuitive manner.

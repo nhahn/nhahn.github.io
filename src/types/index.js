@@ -4,4 +4,4 @@ export { ProjectType } from "./project"
 export { SocialType } from "./social"
 export { WorkHistoryType } from "./work-history"
 export { EducationType } from "./education"
-export { PublicationType } from './publications'
+export { PublicationType } from './publication'

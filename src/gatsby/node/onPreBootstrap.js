@@ -11,14 +11,17 @@ module.exports = ({ reporter }, options) => {
     reporter.info(`creating the ${contentPath} directory with sample data`)
     fs.mkdirSync(contentPath)
     fs.mkdirSync(`${contentPath}images`)
+    fs.mkdirSync(`${contentPath}publications`)
 
     const filesToCopy = [
       "profile.yaml",
       "projects.yaml",
+      "education.yaml",
+      "publications.yaml",
       "social.yaml",
       "work-history.yaml",
-      "images/profile.jpg",
-      "images/project.jpg",
+      "images/*",
+      "publications/*",
     ]
 
     filesToCopy.forEach(file =>

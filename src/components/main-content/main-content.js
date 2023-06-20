@@ -7,6 +7,7 @@ import Summary from "../summary/summary"
 import Tools from "../tools/tools"
 import WorkHistory from "../work-history/work-history"
 import Education from "../education/education"
+import Publications from '../publications/publications'
 
 const MainContent = ({ formspreeEndpoint, history, projects, profile, education, publications }) => {
   return (
@@ -25,6 +26,7 @@ const MainContent = ({ formspreeEndpoint, history, projects, profile, education,
       {profile.about && <About about={profile.about} />}
       <Education education={education} />
       <Projects projects={projects} />
+      <Publications publications={publications} />
       <WorkHistory history={history} />
       <ContactForm
         formspreeEndpoint={formspreeEndpoint}

@@ -1,0 +1,50 @@
+- title: "The Knowledge Accelerator: Big Picture Thinking in Small Pieces"
+  authors: Nathan Hahn, Joseph Chang, Ji Eun Kim, Aniket Kittur
+  pdf: publications/ka.pdf
+  year: 2016
+  doi: 10.1145/2858036.2858364
+- title: "Alloy: Clustering with Crowds and Computation"
+  authors: Joseph Chee Chang, Aniket Kittur, Nathan Hahn
+  pdf: publications/alloy.pdf
+  year: 2016
+  doi: 10.1145/2858036.2858411
+- title: "SearchLens: composing and capturing complex user interests for exploratory search"
+  authors: Joseph Chee Chang, Nathan Hahn, Adam Perer, Aniket Kittur
+  pdf: publications/searchlens.pdf
+  year: 2019
+  doi: 10.1145/3301275.3302321
+- title: "Supporting mobile sensemaking through intentionally uncertain highlighting"
+  authors: Joseph Chee Chang, Nathan Hahn, Aniket Kittur
+  pdf: publications/highlighting.pdf
+  year: 2016
+  doi: 10.1145/2984511.2984538
+- title: "Bento browser: Complex mobile search without tabs"
+  authors: Nathan Hahn, Joseph Chee Chang, Aniket Kittur
+  pdf: publications/bento.pdf
+  year: 2018
+  doi: 10.1145/3173574.3173825
+- title: "Casual microtasking: Embedding microtasks in Facebook"
+  authors: Nathan Hahn, Shamsi T Iqbal, Jaime Teevan
+  pdf: publications/microtasking.pdf
+  year: 2019
+  doi: 10.1145/3290605.3300249
+- title: "Mesh: Scaffolding comparison tables for online decision making"
+  authors: Joseph Chee Chang, Nathan Hahn, Aniket Kittur
+  pdf: publications/mesh.pdf
+  year: 2020
+  doi: 10.1145/3379337.3415865
+- title: "When the tab comes due: challenges in the cost structure of browser tab usage"
+  authors: Joseph Chee Chang, Nathan Hahn, Yongsung Kim, Julina Coupland, Bradley Breneisen, Hannah S Kim, John Hwong, Aniket Kittur
+  pdf: publications/tabs.pdf
+  year: 2021
+  doi: 10.1145/3411764.3445585
+- title: "Crowdlines: Supporting synthesis of diverse information sources through crowdsourced outlines"
+  authors: Kurt Luther, Nathan Hahn, Steven Dow, Aniket Kittur
+  pdf: publications/crowdlines.pdf
+  year: 2015
+  doi: 10.1609/hcomp.v3i1.13239
+- title: "Unakite: Scaffolding developers' decision-making using the web"
+  authors: Michael Xieyang Liu, Jane Hsieh, Nathan Hahn, Angelina Zhou, Emily Deng, Shaun Burley, Cynthia Taylor, Aniket Kittur, Brad A Myers
+  pdf: publications/unakite.pdf
+  year: 2019
+  doi: 10.1145/3332165.3347908

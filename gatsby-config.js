@@ -5,11 +5,11 @@
 
 module.exports = {
   siteMetadata: {
-    description: "Personal page of John Doe",
+    description: "Personal page of Nathan Hahn",
     locale: "en",
     showThemeLogo,
-    title: "John Doe",
-    formspreeEndpoint: "https://formspree.io/f/{your-id}",
+    title: "Nathan Hahn",
+    formspreeEndpoint: "https://formspree.io/f/xjvdqdrj",
   },
   plugins: [
     {

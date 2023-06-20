@@ -4,6 +4,7 @@ import { ProjectType } from "../../types"
 import ProjectIcon from "./project-icon"
 import ProjectStatus from "./project-status"
 import ProjectTags from "./project-tags"
+import {FaExternalLinkAlt} from 'react-icons/fa'
 
 const Project = props => {
   const { name, image, url, description, status, tags, icon } = props
@@ -15,17 +16,29 @@ const Project = props => {
         </div>
       )}
       <div className="lg:flex-1">
-        <h4 className="font-bold">{name}</h4>
-        {url && (
-          <a
-            className="text-front underline break-all hover:opacity-75 transition-opacity duration-150"
+        <h4 className="font-bold inline-flex">
+          {url &&
+            <a
+            className="hover:opacity-75 transition-opacity duration-150"
             href={url}
             rel="noreferrer noopener"
             target="_blank"
           >
-            {url}
+            {name}
+          </a>
+          }
+          {!url && name}
+          {url && (
+          <a
+            className="pl-2 underline hover:opacity-75 transition-opacity duration-150"
+            href={url}
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <FaExternalLinkAlt />
           </a>
         )}
+        </h4>
         <p className="w-full py-4 whitespace-pre-line">{description}</p>
         <ul className="pr-2">
           {status && <ProjectStatus status={status} />}
