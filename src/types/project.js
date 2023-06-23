@@ -9,6 +9,7 @@ export const ProjectType = {
   }),
   name: string.isRequired,
   status: string,
+  who: string.isRequired,
   tags: arrayOf(string),
   url: string,
 }
@@ -23,6 +24,7 @@ export const query = graphql`
       }
     }
     name
+    who
     status
     tags
     url

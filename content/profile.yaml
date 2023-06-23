@@ -4,7 +4,7 @@
   profession: Computer Scientist
   image: images/profile.jpg
   location: Washington, DC
-  relocation: true
+  relocation: false
   company: DEVCOM, Army Research Labs
   for_hire: false
   focus: Building Pleasant Experiences

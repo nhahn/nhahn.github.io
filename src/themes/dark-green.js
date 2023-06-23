@@ -1,7 +1,7 @@
 module.exports = {
   'back': '#161b23',
   'front': '#9dadc5',
-  'lead': '#91e12a',
+  'lead': '#25a55f',
   'lead-text': '#161b23',
   'line': '#28303c',
   'skill-1': '#25a55f',

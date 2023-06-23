@@ -7,28 +7,16 @@ module.exports = ({ reporter }, options) => {
     contentPath += "/"
   }
 
-  if (!fs.existsSync(contentPath)) {
-    reporter.info(`creating the ${contentPath} directory with sample data`)
-    fs.mkdirSync(contentPath)
-    fs.mkdirSync(`${contentPath}images`)
-    fs.mkdirSync(`${contentPath}publications`)
+  if (fs.existsSync(contentPath)) {
+    reporter.info(`copying publications to static directory`)
 
-    const filesToCopy = [
-      "profile.yaml",
-      "projects.yaml",
-      "education.yaml",
-      "publications.yaml",
-      "social.yaml",
-      "work-history.yaml",
-      "images/*",
-      "publications/*",
-    ]
-
+    const filesToCopy = ["publications"]
     filesToCopy.forEach(file =>
-      fs.copyFileSync(
-        `${__dirname}/../../../content/${file}`,
-        `${contentPath}${file}`
-      )
+      fs.cpSync(
+        `${contentPath}${file}`,
+        `static/${file}`
+      , {recursive: true})
     )
   }
+  
 }
