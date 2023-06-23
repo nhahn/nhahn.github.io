@@ -14,9 +14,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <div className="antialiased bg-back leading-normal font-text text-front">
-      <SEO />
-      <StructuredData profile={profile} social={social.nodes} />
-      <CustomFonts />
 
       <Header initials={profile.initials} />
 
@@ -42,6 +39,16 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage
+
+export function Head({data}) {
+  const {profile, social} = data
+  
+  return <>
+      <SEO />
+      <StructuredData profile={profile} social={social.nodes} />
+      <CustomFonts />
+  </>
+}
 
 export const query = graphql`
   query {

@@ -1,5 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { arrayOf, shape, ProfileType, SocialType } from "../../types"
 
 const StructuredData = ({ profile, social }) => {
@@ -17,9 +16,7 @@ const StructuredData = ({ profile, social }) => {
   }
 
   return (
-    <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
+    <script type="application/ld+json">{JSON.stringify(schema)}</script>
   )
 }
 
