@@ -1,2 +1,0 @@
-webpackJsonp([0xaaa8f6f0bfde],{560:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e){e.data;return d.default.createElement("div",null,d.default.createElement(r.default,{title:"Side Projects | Nathan Hahn"}),d.default.createElement("h1",null,"Coming Soon!"))}t.__esModule=!0,t.default=l;var u=a(1),d=n(u),f=a(24),o=(n(f),a(59)),r=n(o),c=a(60),i=(n(c),a(62),a(113),a(88));n(i),a(47);a(86),e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-personal-js-f2af33091ecfb094d280.js.map
