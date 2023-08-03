@@ -1,12 +1,12 @@
 //TODO make sure I have the right version here that is using promises
+const fetch = require('node-fetch');
+
 module.exports = ({ node, actions }) => {
     const { createNode, createNodeField } = actions
     // Transform the new node here and create a new node or
     // create a new node field.
 
     if (node.internal.type == "PublicationsYaml" && node.doi) {
-        console.log("Fetching!")
-
         let bibtexFetch = fetch(`http://doi.org/${node.doi}`,
         {
             headers: {

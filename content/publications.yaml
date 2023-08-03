@@ -37,7 +37,7 @@
   authors: Joseph Chee Chang, Nathan Hahn, Yongsung Kim, Julina Coupland, Bradley Breneisen, Hannah S Kim, John Hwong, Aniket Kittur
   pdf: publications/tabs.pdf
   year: 2021
-  doi: 10.1145/3411764.3445585
+  doi: 10.1145/3411764.3445585 
 - title: "Crowdlines: Supporting synthesis of diverse information sources through crowdsourced outlines"
   authors: Kurt Luther, Nathan Hahn, Steven Dow, Aniket Kittur
   pdf: publications/crowdlines.pdf
@@ -48,3 +48,13 @@
   pdf: publications/unakite.pdf
   year: 2019
   doi: 10.1145/3332165.3347908
+- title: "Fuse: In-Situ Sensemaking Support in the Browser"
+  authors: Andrew Kuznetsov, Joseph Chee Chang, Nathan Hahn, Napol Rachatasumrit, Bradley Breneisen, Julina Coupland, Aniket Kittur
+  pdf: publications/fuse.pdf
+  year: 2022
+  doi: 10.1145/3526113.3545693
+- title: "Navigating Team Cognition: Goal Terrain as Living Map to Situation Awareness"
+  authors: Melissa Carraway, Victoria Chang, Nathan Hahn, Susan Campbell
+  pdf: publications/goal_terrain.pdf
+  year: 2023
+  doi: 10.54941/ahfe1003741

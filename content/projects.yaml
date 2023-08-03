@@ -1,6 +1,6 @@
 - name: XR-COP
   url: https://www.army.mil/article/249049/mcbl_experiments_with_arls_cross_reality_cop_to_support_distributed_collaboration_in_virtual_reality
-  description: A virtual reality command and control application that was developed for the Army that connects high resolution 3D maps with Army field systems.
+  description: A virtual reality command and control application for the Army which supports distributed collaboration using 3D terrain maps. 
   who: DEVCOM Army Research Labs
   tags:
     - Unity
@@ -8,7 +8,7 @@
   image: images/xr_cop.jpg
 
 - name: Eye-Gaze AR Information Mediation
-  description: We developed and ran a study showing how eye-gaze in Augmented Reality (AR) can help reduce cognitive burden by hiding unnecessary information in a congested environment.
+  description: We ran a study showing how eye-gaze in Augmented Reality (AR) can help reduce cognitive burden by hiding unnecessary information in a congested environment.
   image: images/eyegaze.png
   who: DEVCOM Army Research Labs & UT Austin
   tags:
@@ -17,7 +17,7 @@
 
 - name: Fuse
   url: https://www.skeema.com/
-  description: Fuse allows users to manage, and compile their messy browser tabs in to a structured workspace. It's available now as Skeema, a chrome extension to try out!
+  description: Fuse allows users to manage, and compile their messy browser tabs in to a structured workspace. It's available now as Skeema, a chrome extension.
   who: Carnegie Mellon HCII  
   tags:
     - React
@@ -25,7 +25,7 @@
   image: images/fuse.jpg
 
 - name: Meta
-  description: Meta is a tool that allowed users to extract and compare entities (in this case products) across websites. From a search, it would collate the most recommended products from a variety of sources into a single view.
+  description: Meta is a tool that allows users to extract and compare entities (in this case products) across websites. From a search, it would collate the most recommended products from a variety of sources into a single view.
   who: Carnegie Mellon HCII
   tags:
     - React

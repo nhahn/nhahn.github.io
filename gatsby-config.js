@@ -1,6 +1,6 @@
   let basePath = "/",
       contentPath = "content/",
-      showThemeLogo = true,
+      showThemeLogo = true, 
       theme = "dark-green";
 
 module.exports = {

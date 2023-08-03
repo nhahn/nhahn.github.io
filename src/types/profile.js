@@ -41,7 +41,7 @@ export const query = graphql`
     for_hire
     image {
       childImageSharp {
-        gatsbyImageData(layout: FIXED, width: 144, height: 144, quality: 85)
+        gatsbyImageData(layout: FIXED, width: 200, height: 200, quality: 85)
       }
       publicURL
     }
