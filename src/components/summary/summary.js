@@ -50,7 +50,7 @@ const Summary = ({ profile }) => {
       <h3 className="font-header font-light text-2xl text-front leading-tight">
         I create experiences from ideation, through development and into testing
       </h3>
-      <h1 className="flex md:text-5xl text-4xl mt-4 flex-wrap">
+      <h1 className="flex md:text-5xl text-3xl mt-4 flex-wrap justify-around lg:justify-start">
         {icons.map((icon) => {
           const random = Math.floor(Math.random() * colors.length);
           const color = colors.splice(random, 1)[0]
