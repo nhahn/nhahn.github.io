@@ -4,7 +4,7 @@ import { arrayOf, number, string, object, oneOf } from "prop-types"
 export const PublicationType = {
   title: string.isRequired,
   authors: string.isRequired,
-  pdf: string,
+  pdf: object,
   doi: string,
   year: number,
   description: string

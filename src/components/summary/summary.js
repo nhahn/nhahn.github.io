@@ -51,8 +51,8 @@ const Summary = ({ profile }) => (
     <h3 className="font-header font-light text-2xl text-front leading-tight">
       I create experiences from ideation, through development and into testing
     </h3>
-    <h1 className="flex text-5xl mt-4">
-      {icons.map((icon) => <WobbleIcon Icon={icon} />)}
+    <h1 className="flex md:text-5xl text-4xl mt-4 flex-wrap">
+      {icons.map((icon) => <WobbleIcon Icon={icon} key={icon}/>)}
     </h1>
   </div>
 )

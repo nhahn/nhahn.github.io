@@ -3,6 +3,7 @@ import Location from "./location"
 import ProfileImage from "./profile-image"
 import { arrayOf, shape, ProfileType, SocialType } from "../../types"
 import SocialLinks from "../social-links/social-links"
+import {FaRegFilePdf} from 'react-icons/fa'
 
 const Sidebar = ({ profile, social }) => (
   <aside className="w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12">
@@ -27,6 +28,16 @@ const Sidebar = ({ profile, social }) => (
             relocation={profile.relocation}
           />
         )}
+        <h3 className="mt-3">
+          <a
+            className="hover:opacity-75 transition-opacity duration-150 flex items-center underline"
+            href="/CV.pdf"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <FaRegFilePdf className="inline-block mr-1"/>
+            Curriculum Vitae (CV)
+          </a></h3>
       </div>
 
       <div className="pt-8 pb-12 lg:py-0">

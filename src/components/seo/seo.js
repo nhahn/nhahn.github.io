@@ -57,7 +57,7 @@ const SEO = props => {
   return (
     <>
       <title>{title}</title>
-      {metaTags.map(tag => <meta name={tag.name} property={tag.property} content={tag.content} />)}
+      {metaTags.map(tag => <meta name={tag.name} property={tag.property} content={tag.content} key={`${tag.name}${tag.property}`}/>)}
     </>
   )
 }
