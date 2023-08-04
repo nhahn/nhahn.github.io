@@ -27,16 +27,12 @@ function shuffle(array) {
 }
 
 var isNeg = true;
-var colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2']
 
-const WobbleIcon = ({Icon}) => {
+const WobbleIcon = ({Icon, color}) => {
   let rotate = Math.floor(Math.random() * 10) + 20
   if (isNeg)
     rotate -= 50
   isNeg = !isNeg
-
-  const random = Math.floor(Math.random() * colors.length);
-  const color = colors.splice(random, 1)[0]
 
   return (
     <div className="ml-2">
@@ -46,16 +42,25 @@ const WobbleIcon = ({Icon}) => {
 }
 
 const icons = shuffle([AiFillExperiment, TbBrandReact,SiIos,TbBrandJavascript,PiVirtualRealityFill,TbAugmentedReality,TbBrandUnity,DiRuby])
-const Summary = ({ profile }) => (
-  <div className="pb-8">
-    <h3 className="font-header font-light text-2xl text-front leading-tight">
-      I create experiences from ideation, through development and into testing
-    </h3>
-    <h1 className="flex md:text-5xl text-4xl mt-4 flex-wrap">
-      {icons.map((icon) => <WobbleIcon Icon={icon} key={icon}/>)}
-    </h1>
-  </div>
-)
+const Summary = ({ profile }) => {
+  var colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2']
+
+  return (
+    <div className="pb-8">
+      <h3 className="font-header font-light text-2xl text-front leading-tight">
+        I create experiences from ideation, through development and into testing
+      </h3>
+      <h1 className="flex md:text-5xl text-4xl mt-4 flex-wrap">
+        {icons.map((icon) => {
+          const random = Math.floor(Math.random() * colors.length);
+          const color = colors.splice(random, 1)[0]
+
+          return <WobbleIcon Icon={icon} key={icon} color={color}/>
+        })}
+      </h1>
+    </div>
+  )
+}
 
 Summary.propTypes = {
   profile: shape(ProfileType),

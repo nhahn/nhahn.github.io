@@ -40,7 +40,7 @@ const Sidebar = ({ profile, social }) => (
           </a></h3>
       </div>
 
-      <div className="pt-8 pb-12 lg:py-0">
+      <div className="pt-8 pb-12 lg:py-0 flex flex-col items-center">
         <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
           Connect
         </h5>
